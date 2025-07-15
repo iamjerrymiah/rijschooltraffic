@@ -2,9 +2,9 @@ import  { lazy } from 'react'
 import Layout from '../layout/Layout'
 
 const Home = lazy(() => import("../pages/Home/Home"));
-// const Home = lazy(() => import(""));
-// const Home = lazy(() => import(""));
-// const Home = lazy(() => import(""));
+const OverOns = lazy(() => import("../pages/OverOns/OverOns"));
+const Tarieven = lazy(() => import("../pages/Tarieven/Tarieven"));
+const LesenVanaf = lazy(() => import("../pages/LessenVanaf/LessenVanaf"));
 // const Home = lazy(() => import(""));
 // const Home = lazy(() => import(""));
 // const Home = lazy(() => import(""));
@@ -19,12 +19,24 @@ const routeConfig = [
         auth: false,
         layout: Layout,
     },
-    // {
-    //     path: "/over-ons",
-    //     component: OverOns,
-    //     auth: false,
-    //     layout: Layout,
-    // },
+    {
+        path: "/over-ons",
+        component: OverOns,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/tarieven",
+        component: Tarieven,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/lessen-vanaf",
+        component: LesenVanaf,
+        auth: false,
+        layout: Layout,
+    },
 ]
 
 export default routeConfig
