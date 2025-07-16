@@ -8,9 +8,10 @@ const LesenVanaf = lazy(() => import("../pages/LessenVanaf/LessenVanaf"));
 const TheorieExamen = lazy(() => import("../pages/TheorieExamen/TheorieExamen"));
 const Eigen = lazy(() => import("../pages/Eigen/Eigen"));
 const Rijschool = lazy(() => import("../pages/Rijschool/Rijschool"));
-// const Home = lazy(() => import(""));
-// const Home = lazy(() => import(""));
-// const Home = lazy(() => import(""));
+const Praktijkexamen = lazy(() => import("../pages/Praktijkexamen/Praktijkexamen"));
+const Wist = lazy(() => import("../pages/Wist/Wist"));
+const Informatie = lazy(() => import("../pages/Informatie/Informatie"));
+
 
 const routeConfig = [
     {
@@ -52,6 +53,24 @@ const routeConfig = [
     {
         path: "/rijschool-machtigen",
         component: Rijschool,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/praktijkexamen-afleggen",
+        component: Praktijkexamen,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/wist-jij-dat",
+        component: Wist,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/informatie-voor-ouders",
+        component: Informatie,
         auth: false,
         layout: Layout,
     },
