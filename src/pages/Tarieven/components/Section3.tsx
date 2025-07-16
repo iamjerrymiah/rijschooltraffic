@@ -1,11 +1,10 @@
-import { Box, Button, Container, Heading, Icon, Text } from "@chakra-ui/react";
+import { Box, Heading, Icon, Text } from "@chakra-ui/react";
 import Section from "../../../common/Section";
 import { MdPhone } from "react-icons/md";
 import ContactBtns from "../../../common/Button/ContactBtns";
 
 export default function Section3() {
   return (
-    // <Container>
     <Box my={10} px={[4, 10, 10, 28]}>
       <Section
         leftContent={
@@ -25,19 +24,17 @@ export default function Section3() {
                 die voor jullie allebei het beste uitkomen. Je examendatum
                 bepaal je samen met je instructeur.
               </Text>
-
             </Box>
 
             <ContactBtns
-                leftIcon={<Icon as={MdPhone as unknown as React.ElementType} />}
-                leftText=" 085 060 41 10"
-                rightText="Gratis proefles aanvragen"
+              leftIcon={<Icon as={MdPhone as unknown as React.ElementType} />}
+              leftText="085 060 41 10"
+              rightText="Gratis proefles aanvragen"
             />
           </>
         }
         rightContent={<Box borderRadius="lg" overflow="hidden" w="100%"></Box>}
       />
     </Box>
-    // </Container>
   );
 }
