@@ -72,7 +72,7 @@ export default function Section1() {
 
               <ContactBtns
                 leftIcon={<Icon as={MdPhone as unknown as React.ElementType} />}
-                leftText=" 085 060 41 10"
+                leftText="085 060 41 10"
                 rightText="Gratis proefles aanvragen"
               />
             </VStack>

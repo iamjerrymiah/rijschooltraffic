@@ -5,18 +5,21 @@ export default function ContactBtns({
   leftText,
   rightText,
   rightIcon,
+  removeLeftBtn,
   removeRightBtn
 }: any) {
   return (
-    <Box display="flex" gap={4}>
-      <Button
-        fontSize={"12px"}
-        fontWeight={400}
-        leftIcon={leftIcon}
-        colorScheme="blue"
-      >
-        {leftText}
-      </Button>
+    <Box display="flex" gap={4} mt={2}>
+      {!removeLeftBtn && (
+        <Button
+          fontSize={"12px"}
+          fontWeight={400}
+          leftIcon={leftIcon}
+          colorScheme="blue"
+        >
+          {leftText}
+        </Button>
+      )}
       {!removeRightBtn && (
         <Button
           fontSize={"12px"}

@@ -219,6 +219,7 @@ export default function Header() {
                                         if (!link?.asChildren || link?.asChildren?.length <= 0) {
                                             navigate(link?.link);
                                         }
+                                        onClose();
                                     }}
                                 >
                                 <HStack w="100%" justify="space-between" 
@@ -251,7 +252,7 @@ export default function Header() {
                                             w="100%"
                                             cursor="pointer"
                                             _hover={{ bgColor: "#F9FAFB" }}
-                                            onClick={() => child?.onUse()}
+                                            onClick={() => {child?.onUse(); onClose()}}
                                         >
                                             <Text fontSize="13px" _hover={{ color: 'gray' }}>
                                                 {child?.name}
