@@ -7,7 +7,7 @@ import { useNavigate } from "react-router";
 
 import secImg from '../../../assets/img/informatie5.webp'
 
-export default function TheoriecursusApeldoorn() {
+export default function TheoriecursusApeldoorn({ region }: any) {
 
     const navigate = useNavigate()
 
@@ -17,7 +17,7 @@ export default function TheoriecursusApeldoorn() {
                     <Section 
                         leftContent={(
                             <VStack align="start">
-                                <Heading size="lg">Theoriecursus Apeldoorn</Heading>
+                                <Heading size="lg">Theoriecursus {region ? region : "Apeldoorn"}</Heading>
                                 <Text fontSize="14px" py={2}>
                                     Wil je jouw theoriecertificaat halen? Dan raden wij aan een theoriecursus te volgen. Met een theoriecursus is slagen voor het theorie-examen zo goed als gegarandeerd. 
                                     Je leert op een examengerichte wijze met handige ezelsbruggetjes en echte examenvragen. Omdat wij al jarenlang in deze branche zitten, weten wij precies hoe het examen inelkaar zit. 
@@ -42,7 +42,7 @@ export default function TheoriecursusApeldoorn() {
                                 <Text fontSize="14px" py={2}>
                                     Wat het nog beter maakt is dat je na je theoriecursus dezelfde dag nog het examen in kan. 
                                     Doordat je het theorie-examen in gaat met de verse lesstof, is de kans op slagen nog groter! Door onze unieke aanpak slagen bijna al onze leerlingen in één keer. 
-                                    Bespaar geld met een theoriecursus door zakken te voorkomen bij <Link color={'orange'} onClick={()=>navigate(`/theoriecursus`)}>theoriecursus Apeldoorn</Link>!
+                                    Bespaar geld met een theoriecursus door zakken te voorkomen bij <Link color={'orange'} onClick={()=>navigate(`/theoriecursus`)}>theoriecursus {region ? region : "Apeldoorn"}</Link>!
                                 </Text>
 
                                 <ContactBtns

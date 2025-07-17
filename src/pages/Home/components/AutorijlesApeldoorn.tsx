@@ -7,7 +7,7 @@ import { useNavigate } from "react-router";
 
 import secImg from '../../../assets/img/informatie5.webp'
 
-export default function AutorijlesApeldoorn() {
+export default function AutorijlesApeldoorn({region}: any) {
 
     const navigate = useNavigate()
 
@@ -17,9 +17,9 @@ export default function AutorijlesApeldoorn() {
                     <Section 
                         leftContent={(
                             <VStack align="start">
-                                <Heading size="lg">Autorijles Apeldoorn</Heading>
+                                <Heading size="lg">Autorijles {region ? region : "Apeldoorn"}</Heading>
                                 <Text fontSize="14px" py={2}>
-                                    Wil jij je rijbewijs B halen bij DIEP Opleidingen? Onze rijschool in Apeldoorn en omstreken geeft jou die kans in goed verzorgde lesauto’s met vakkundige instructeurs. 
+                                    Wil jij je rijbewijs B halen bij DIEP Opleidingen? Onze rijschool in {region ? region : "Apeldoorn"} en omstreken geeft jou die kans in goed verzorgde lesauto’s met vakkundige instructeurs. 
                                     Je mag bij ons al beginnen met je eerste rijles als je 16,5 jaar oud bent. Op je 17e verjaardag kan je direct afrijden. 
                                     Tot je 18e verjaardag mag je samen met je begeleider achter het stuur. Op je 18e verjaardag mag je direct al volledig zelfstandig auto rijden!
                                 </Text>
@@ -48,7 +48,7 @@ export default function AutorijlesApeldoorn() {
                                     Wil je autorijlessen volgen en heb je al een keuze gemaakt of je in een schakel of automaat wilt rijden? Dan volgen de rijlessen. 
                                     De rijlessen zijn bij ons examengericht, wat dus wilt zeggen dat we voornamelijk gaan rijden op de examenroutes van het CBR. 
                                     Zo zal het praktijkexamen aanvoelen als een herhaling van de lessen, waardoor het een stuk makkelijker wordt om te slagen. 
-                                    Interesse? Vraag een gratis proefles aan voor autorijles bij onze <Link color={'orange'} onClick={()=>navigate(`/autorijschool-apeldoorn`)}>autorijschool in Apeldoorn</Link>!
+                                    Interesse? Vraag een gratis proefles aan voor autorijles bij onze <Link color={'orange'} onClick={()=>navigate(`/autorijschool-apeldoorn`)}>autorijschool in {region ? region : "Apeldoorn"}</Link>!
                                 </Text>
 
                                 <ContactBtns

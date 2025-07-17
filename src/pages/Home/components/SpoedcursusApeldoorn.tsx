@@ -7,7 +7,7 @@ import { useNavigate } from "react-router";
 import { MdCheckCircleOutline, MdPhone } from "react-icons/md";
 import ContactBtns from "../../../common/Button/ContactBtns";
 
-export default function SpoedcursusApeldoorn() {
+export default function SpoedcursusApeldoorn({ region }: any) {
 
     const navigate = useNavigate()
 
@@ -22,7 +22,7 @@ export default function SpoedcursusApeldoorn() {
                         )}
                         rightContent={(
                             <VStack align="start">
-                                <Heading size="lg">Spoedcursus rijbewijs Apeldoorn</Heading>
+                                <Heading size="lg">Spoedcursus rijbewijs {region ? region : "Apeldoorn"}</Heading>
                                 <Text fontSize="14px" py={2}>
                                     Kan je niet wachten en wil je zo snel mogelijk je rijbewijs halen? Met een spoedcursus 
                                     rijbewijs kan je bij DIEP Opleidingen binnen 1, 2 of 3 weken al je rijbewijs halen. 
@@ -52,7 +52,7 @@ export default function SpoedcursusApeldoorn() {
                                 <Text fontSize="14px" py={2}>
                                     De rijbewijs snelcursus is volledig aangepast op jouw niveau. 
                                     Onze geduldige en ervaren instructeurs maken je met onze unieke lesmethode in een korte tijd klaar voor het examen. 
-                                    De meeste slagen in één keer! Klik op <Link color={'orange'} onClick={()=>navigate(`/spoedcursus`)}>spoedcursus rijbewijs Apeldoorn </Link>voor meer informatie.
+                                    De meeste slagen in één keer! Klik op <Link color={'orange'} onClick={()=>navigate(`/spoedcursus`)}>spoedcursus rijbewijs {region ? region : "Apeldoorn"} </Link>voor meer informatie.
                                 </Text>
 
                                 <ContactBtns
