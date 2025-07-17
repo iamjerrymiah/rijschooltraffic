@@ -44,7 +44,7 @@ export default function Hero({ region }: any) {
                 <Text fontSize="xl" mt={2} fontWeight="bold" color="orange.300">De beste start voor je rijopleiding sinds 2012! </Text>
 
                 <Text mt={4} fontSize="md">
-                    Wij van Rijschool Apeldoorn geven jou de meest kwalitatieve
+                    Wij van Rijschool {region ? region : "Apeldoorn"} geven jou de meest kwalitatieve
                     rijopleidingen van Nederland. Wij werken persoonsgericht en kijken
                     naar wat jij nodig hebt om je rijbewijs in één keer te halen. Plan
                     nu je proefles in en ervaar het zelf!

@@ -13,6 +13,10 @@ const Wist = lazy(() => import("../pages/Wist/Wist"));
 const Informatie = lazy(() => import("../pages/Informatie/Informatie"));
 const Veelgestelde = lazy(() => import("../pages/Veelgestelde/Veelgestelde"));
 const Beekbergen = lazy(() => import("../pages/Beekbergen/Beekbergen"));
+const Hoenderloo = lazy(() => import("../pages/Hoenderloo/Hoenderloo"));
+const Teuge = lazy(() => import("../pages/Teuge/Teuge"));
+const Twello = lazy(() => import("../pages/Twello/Twello"));
+const Vaassen = lazy(() => import("../pages/Vaassen/Vaassen"));
 
 
 const routeConfig = [
@@ -85,6 +89,30 @@ const routeConfig = [
     {
         path: "/rijschool-beekbergen",
         component: Beekbergen,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/rijschool-hoenderloo",
+        component: Hoenderloo,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/rijschool-teuge",
+        component: Teuge,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/rijschool-twello",
+        component: Twello,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/rijschool-vaassen",
+        component: Vaassen,
         auth: false,
         layout: Layout,
     },

@@ -8,7 +8,7 @@ import ContactBtns from "../../../common/Button/ContactBtns";
 import secImg from '../../../assets/img/informatie5.webp'
 
 
-export default function MotorrijschoolApeldoorn() {
+export default function MotorrijschoolApeldoorn({ region }: any) {
     
     const navigate = useNavigate()
 
@@ -18,10 +18,10 @@ export default function MotorrijschoolApeldoorn() {
                     <Section 
                         leftContent={(
                             <VStack align="start">
-                                <Heading size="lg">Motorrijschool Apeldoorn</Heading>
+                                <Heading size="lg">Motorrijschool {region ? region : "Apeldoorn"}</Heading>
                                 <Text fontSize="14px" py={2}>
                                     Bij DIEP Opleidingen bieden we ook motorrijlessen aan. Ervaar de vrijheid van de open weg en de opwinding van het motorrijden onder begeleiding van onze ervaren instructeurs. 
-                                    Onze motorrijschool in Apeldoorn staat klaar om je te helpen jouw motorrijbewijs te behalen.
+                                    Onze motorrijschool in {region ? region : "Apeldoorn"} staat klaar om je te helpen jouw motorrijbewijs te behalen.
                                 </Text>
                                 <VStack align="start" pt={2}>
                                     {[

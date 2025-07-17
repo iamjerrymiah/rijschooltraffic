@@ -7,7 +7,7 @@ import { useNavigate } from "react-router";
 import { MdCheckCircleOutline, MdPhone } from "react-icons/md";
 import ContactBtns from "../../../common/Button/ContactBtns";
 
-export default function OpfriscursusApeldoorn() {
+export default function OpfriscursusApeldoorn({ region }: any) {
 
     const navigate = useNavigate()
 
@@ -22,7 +22,7 @@ export default function OpfriscursusApeldoorn() {
                         )}
                         rightContent={(
                             <VStack align="start">
-                                <Heading size="lg">Opfriscursus Apeldoorn</Heading>
+                                <Heading size="lg">Opfriscursus {region ? region : "Apeldoorn"}</Heading>
                                 <Text fontSize="14px" py={2}>
                                     Heb je al een rijbewijs, maar voel jij je niet zo zelfverzekerd achter stuur? 
                                     Met een opfriscursus van DIEP Opleidingen kunnen we je helpen om alle onzekerheden weg te werken. 
@@ -48,7 +48,7 @@ export default function OpfriscursusApeldoorn() {
                                 <Text fontSize="14px" py={2}>
                                     Met een opfriscursus zorgen we ervoor dat je weer vol zelfvertrouwen achter het stuur kan en volledig zelfstandig de weg op kunt gaan, 
                                     zonder enige twijfels. Je krijgt handige tips onder de begeleiding van onze geduldige en vriendelijke instructeurs. 
-                                    Meld je aan voor opfrisrijlessen bij <Link color={'orange'} onClick={()=>navigate(`/opfriscursus`)}>opfriscursus Apeldoorn </Link>!
+                                    Meld je aan voor opfrisrijlessen bij <Link color={'orange'} onClick={()=>navigate(`/opfriscursus`)}>opfriscursus {region ? region : "Apeldoorn"} </Link>!
                                 </Text>
 
                                 <ContactBtns
