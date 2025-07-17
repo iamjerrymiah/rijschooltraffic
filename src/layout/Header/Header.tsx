@@ -51,7 +51,7 @@ export default function Header() {
             {name: "Eigen verklaring", onUse: ()=>navigate(`/eigen-verklaring`)},
             {name: "Rijschool machtigen", onUse: ()=>navigate(`/rijschool-machtigen`)},
             {name: "Praktijkexamen afleggen", onUse: ()=>navigate(`/praktijkexamen-afleggen`)},
-            {name: "Leerling app", onUse: ()=>navigate(`/leerling-app`)},
+            // {name: "Leerling app", onUse: ()=>navigate(`/leerling-app`)},
             {name: "Wist jij dat", onUse: ()=>navigate(`/wist-jij-dat`)},
             {name: "Informatie voor ouders", onUse: ()=>navigate(`/informatie-voor-ouders`)},
             {name: "Veelgestelde vragen", onUse: ()=>navigate(`/veelgestelde-vragen`)},
