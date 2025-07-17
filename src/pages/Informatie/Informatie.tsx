@@ -9,6 +9,8 @@ import Section3 from "./components/Section3";
 import Section4 from "./components/Section4";
 import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
+import Section7 from "./components/Section7";
+import LessonPackage from "../../common/LessonPackage/LessonPackage";
 
 function InformatiePage() {
   return (
@@ -31,8 +33,17 @@ function InformatiePage() {
         <Section3 />
         <Section4 />
         <Section5 />
-        <Section6/>
+        <Section6 />
       </Stack>
+
+      <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
+        <Section7 />
+      </Stack>
+
+      <Stack px={[4, 10, 10, 28]}>
+        <LessonPackage />
+      </Stack>
+
       <CallBackReq />
       <Partners />
     </Box>

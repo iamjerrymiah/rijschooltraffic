@@ -11,6 +11,7 @@ const Rijschool = lazy(() => import("../pages/Rijschool/Rijschool"));
 const Praktijkexamen = lazy(() => import("../pages/Praktijkexamen/Praktijkexamen"));
 const Wist = lazy(() => import("../pages/Wist/Wist"));
 const Informatie = lazy(() => import("../pages/Informatie/Informatie"));
+const Veelgestelde = lazy(() => import("../pages/Veelgestelde/Veelgestelde"));
 
 
 const routeConfig = [
@@ -71,6 +72,12 @@ const routeConfig = [
     {
         path: "/informatie-voor-ouders",
         component: Informatie,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/veelgestelde-vragen",
+        component: Veelgestelde,
         auth: false,
         layout: Layout,
     },
