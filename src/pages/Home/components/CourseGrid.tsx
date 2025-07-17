@@ -10,6 +10,7 @@ import regionImg from "../../../assets/img/region_img.webp";
 import informatie3 from "../../../assets/img/informatie3.webp";
 import region3Img from "../../../assets/img/region3_img.webp";
 import { useNavigate } from 'react-router';
+import { Container } from '../../../styling/layout';
 
 const courses = [
     {title: 'Autorijles', image: imagery, link: `/autorijschool-apeldoorn`},
@@ -24,16 +25,17 @@ export default function CourseGrid() {
 
     return (
         <Box bg="gray.50" py={10} px={[4,10,10,28]}>
+            <Container>
             <VStack spacing={2} textAlign="center" mb={8}>
                 <Heading size="xl">Onze opleidingen</Heading>
-                <Text fontSize="md" maxW="800px">
+                <Text fontSize="sm" maxW="800px">
                     Wil je ook een opleiding volgen bij ons? Hieronder kan je een overzicht zien van de kwalitatieve, 
                     maar betaalbare opleidingen die wij te bieden hebben.
                 </Text>
             </VStack>
 
             <SimpleGrid
-                columns={[1,2,2,5]}
+                columns={[1,1,1,5]}
                 spacing={6}
                 justifyContent="center"
             >
@@ -49,6 +51,7 @@ export default function CourseGrid() {
                     position="relative"
                     boxShadow="md"
                     cursor={'pointer'}
+                    objectFit={'cover'}
                     onClick={()=>navigate(course?.link)}
                     _hover={{ transform: 'scale(1.02)', transition: '0.3s' }}
                 >
@@ -77,6 +80,7 @@ export default function CourseGrid() {
                 </Box>
                 ))}
             </SimpleGrid>
+            </Container>
         </Box>
     );
 }
