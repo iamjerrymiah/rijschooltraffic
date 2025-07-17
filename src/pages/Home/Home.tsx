@@ -6,6 +6,13 @@ import Partners from "./components/Partners";
 import FeaturesGrid from "./components/FeaturesGrid";
 import { Container } from "../../styling/layout";
 import CourseGrid from "./components/CourseGrid";
+import GetDriverLicense from "./components/GetDriverLicense";
+import HomeSection2 from "./components/Section2";
+import AutorijlesApeldoorn from "./components/AutorijlesApeldoorn";
+import SpoedcursusApeldoorn from "./components/SpoedcursusApeldoorn";
+import MotorrijschoolApeldoorn from "./components/MotorrijschoolApeldoorn";
+import OpfriscursusApeldoorn from "./components/OpfriscursusApeldoorn";
+import TheoriecursusApeldoorn from "./components/TheoriecursusApeldoorn";
 
 function HomeMain() {
     return(
@@ -18,7 +25,18 @@ function HomeMain() {
                 </Stack>
             </Container>
             <CourseGrid />
+            <HomeSection2 />
+            <GetDriverLicense />
             <Partners />
+            <Container>
+                <Stack px={[4,10,10,28]}>
+                    <AutorijlesApeldoorn />
+                    <SpoedcursusApeldoorn />
+                    <MotorrijschoolApeldoorn />
+                    <OpfriscursusApeldoorn />
+                    <TheoriecursusApeldoorn />
+                </Stack>
+            </Container>
         </Box>
     )
 }

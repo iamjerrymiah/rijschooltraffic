@@ -32,7 +32,7 @@ export default function Partners() {
                         py='50px'
                         justify='space-around'
                         align='center'
-                        spacing={['75px', '75px', '200px']}
+                        spacing={['100px','150px','150px','200px']}
                         pos='absolute'
                         animation='caro-slide 45s linear infinite'
                     >
