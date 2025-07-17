@@ -12,6 +12,7 @@ const Praktijkexamen = lazy(() => import("../pages/Praktijkexamen/Praktijkexamen
 const Wist = lazy(() => import("../pages/Wist/Wist"));
 const Informatie = lazy(() => import("../pages/Informatie/Informatie"));
 const Veelgestelde = lazy(() => import("../pages/Veelgestelde/Veelgestelde"));
+const Beekbergen = lazy(() => import("../pages/Beekbergen/Beekbergen"));
 
 
 const routeConfig = [
@@ -78,6 +79,12 @@ const routeConfig = [
     {
         path: "/veelgestelde-vragen",
         component: Veelgestelde,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/rijschool-beekbergen",
+        component: Beekbergen,
         auth: false,
         layout: Layout,
     },
