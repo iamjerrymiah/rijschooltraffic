@@ -15,7 +15,7 @@ import {
 import heroImg from "../../../assets/img/hero-img.png";
 import { Container } from "../../../styling/layout";
 
-export default function Hero() {
+export default function Hero({ region }: any) {
   return (
     <Box
       bgImage={heroImg} // Replace with your actual image path
@@ -38,7 +38,7 @@ export default function Hero() {
             <Heading size="2xl">
               Rijschool{" "}
               <Text as="span" color="#00AEEF">
-                Apeldoorn
+                {region ? region : "Apeldoorn"}
               </Text>
             </Heading>
 
