@@ -25,13 +25,15 @@ import {
   FaBars,
   FaStar,
   FaChevronCircleUp,
-  FaChevronCircleDown
+  FaChevronCircleDown,
+  FaCar
 } from 'react-icons/fa';
 import { MdLanguage } from 'react-icons/md';
-import { ElementColor } from '../../constants/colors';
 import { useNavigate } from 'react-router';
 import { useState } from 'react';
-import MenuDropdown from '../../common/Menu/MenuDropdown';
+import { ElementColor } from '../constants/colors';
+import MenuDropdown from '../common/Menu/MenuDropdown';
+import { Container } from '../styling/layout';
 
 export default function Header() {
     const navigate = useNavigate()
@@ -85,6 +87,7 @@ export default function Header() {
     ];
 
     return (
+        <Container>
         <Box position="fixed" top="0" left="0" right="0" zIndex="1000" boxShadow="md">
             {/* Top Banner */}
             <Flex
@@ -131,7 +134,7 @@ export default function Header() {
                         </HStack>
                     </VStack>
                     <Button
-                        leftIcon={<Icon as={FaMobileAlt as unknown as React.ElementType} />}
+                        leftIcon={<Icon as={FaCar as unknown as React.ElementType} />}
                         colorScheme={'orange'}
                         size="sm"
                         fontSize={'12px'}
@@ -269,5 +272,7 @@ export default function Header() {
             </Drawer>
 
         </Box>
+
+        </Container>
     );
 }

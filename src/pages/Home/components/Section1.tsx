@@ -7,7 +7,7 @@ import imagery from "../../../assets/img/sec1.webp"
 
 export default function Section1() {
     return (
-        <Container>
+        // <Container>
             <Box my={10}>
                 <Section 
                     leftContent={
@@ -57,6 +57,6 @@ export default function Section1() {
                     }
                 />
             </Box>
-        </Container>
+        // </Container>
     )
 }
