@@ -10,7 +10,7 @@ export default function GetDriverLicense() {
     const navigate = useNavigate()
 
     return (
-        <Box bg="gray.50" py={10} px={[4,10,10,28]}>
+        <Box bg="whitesmoke" py={10} px={[4,10,10,28]}>
             <Container>
                 <VStack spacing={2} textAlign="center" mb={8}>
                     <Heading size="xl">Rijbewijs halen bij DIEP opleidingen?</Heading>

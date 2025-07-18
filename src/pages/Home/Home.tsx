@@ -13,6 +13,8 @@ import SpoedcursusApeldoorn from "./components/SpoedcursusApeldoorn";
 import MotorrijschoolApeldoorn from "./components/MotorrijschoolApeldoorn";
 import OpfriscursusApeldoorn from "./components/OpfriscursusApeldoorn";
 import TheoriecursusApeldoorn from "./components/TheoriecursusApeldoorn";
+import CallBackReq from "../../common/CallBackReq/CallBackReq";
+import LessonPackage from "../../common/LessonPackage/LessonPackage";
 
 function HomeMain() {
     return(
@@ -35,8 +37,10 @@ function HomeMain() {
                     <MotorrijschoolApeldoorn />
                     <OpfriscursusApeldoorn />
                     <TheoriecursusApeldoorn />
+                    <LessonPackage />
                 </Stack>
             </Container>
+            <CallBackReq />
         </Box>
     )
 }

@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 import heroImg from "../../assets/img/overons_hero.jpeg";
+import { Container } from "../../styling/layout";
 
 export default function CallBackReq() {
   return (
@@ -20,6 +21,7 @@ export default function CallBackReq() {
       px={[4, 8, 8, 20]}
       py={{ base: 6, md: 12 }}
     >
+      <Container>
       <Flex
         direction={{ base: "column", lg: "row" }}
         justify="space-between"
@@ -71,6 +73,7 @@ export default function CallBackReq() {
           </Button>
         </Box>
       </Flex>
+      </Container>
     </Box>
   );
 }
