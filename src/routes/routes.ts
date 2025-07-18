@@ -21,6 +21,8 @@ const Contact = lazy(() => import("../pages/Contact/Contact"));
 const Autorijles = lazy(() => import("../pages/Autorijles/Autorijles"));
 const Motorrijles = lazy(() => import("../pages/Motorrijles/Motorrijles"));
 const Theoriecursus = lazy(() => import("../pages/Theoriecursus/Theoriecursus"));
+const SpoedCursus = lazy(() => import("../pages/SpoedCursus/SpoedCursus"));
+const Opfriscursus = lazy(() => import("../pages/Opfriscursus/Opfriscursus"));
 
 
 const routeConfig = [
@@ -141,6 +143,18 @@ const routeConfig = [
     {
         path: "/theoriecursus",
         component: Theoriecursus,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/spoedcursus",
+        component: SpoedCursus,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/opfriscursus",
+        component: Opfriscursus,
         auth: false,
         layout: Layout,
     },

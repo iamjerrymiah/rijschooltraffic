@@ -31,7 +31,7 @@ export default function Section2() {
                         </Box>
                     }
                     rightContent={
-                        <VStack align="start" p={5}>
+                        <VStack align="start">
                             <Heading size="xl">
                                 Motorkleding bij Diep Opleidingen
                             </Heading>
