@@ -17,6 +17,7 @@ const Hoenderloo = lazy(() => import("../pages/Hoenderloo/Hoenderloo"));
 const Teuge = lazy(() => import("../pages/Teuge/Teuge"));
 const Twello = lazy(() => import("../pages/Twello/Twello"));
 const Vaassen = lazy(() => import("../pages/Vaassen/Vaassen"));
+const Contact = lazy(() => import("../pages/Contact/Contact"));
 
 
 const routeConfig = [
@@ -113,6 +114,12 @@ const routeConfig = [
     {
         path: "/rijschool-vaassen",
         component: Vaassen,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/contact",
+        component: Contact,
         auth: false,
         layout: Layout,
     },
