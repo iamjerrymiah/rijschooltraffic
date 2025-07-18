@@ -11,7 +11,7 @@ export default function Section3() {
       <Section
         leftContent={
           <Box borderRadius="lg" overflow="hidden" w="100%">
-            {/* <Image src={imagery} alt="" w="100%" h="auto" p={10} /> */}
+            <Image src={imagery} alt="" w="100%" h="auto" p={10} />
           </Box>
         }
         rightContent={

@@ -42,7 +42,7 @@ export default function Section2() {
 
         rightContent={
           <Box borderRadius="lg" overflow="hidden" w="100%">
-            {/* <Image src={imagery} alt="" w="100%" h="auto" p={10} /> */}
+            <Image src={imagery} alt="" w="100%" h="auto" p={10} />
           </Box>
         }
       />
