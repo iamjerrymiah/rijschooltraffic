@@ -15,6 +15,14 @@ import OpfriscursusApeldoorn from "./components/OpfriscursusApeldoorn";
 import TheoriecursusApeldoorn from "./components/TheoriecursusApeldoorn";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
+import FaqSection from "./components/FaqSection";
+import Reviews from "./components/Reviews";
+import RijbewijsHalen from "./components/RijbewijsHalen";
+import BeginDirectMetEen from "./components/BeginDirectMetEen";
+import RijlessenVanaf from "./components/RijlessenVanaf";
+import FlexibelKwalitatief from "./components/FlexibelKwalitatief";
+import RijlessenApeldoorn from "./components/RijlessenApeldoorn";
+import RijscholenApeldoorn from "./components/RijscholenApeldoorn";
 
 function HomeMain() {
     return(
@@ -26,21 +34,37 @@ function HomeMain() {
                     <Section1 />
                 </Stack>
             </Container>
+
             <CourseGrid />
             <HomeSection2 />
             <GetDriverLicense />
             <Partners />
+
             <Container>
                 <Stack px={[4,10,10,28]}>
+                    <LessonPackage />
                     <AutorijlesApeldoorn />
                     <SpoedcursusApeldoorn />
                     <MotorrijschoolApeldoorn />
                     <OpfriscursusApeldoorn />
                     <TheoriecursusApeldoorn />
-                    <LessonPackage />
                 </Stack>
             </Container>
+
             <CallBackReq />
+            <Reviews />
+            
+            <Container>
+                <Stack px={[4,10,10,28]}>
+                    <FaqSection />
+                    <RijbewijsHalen />
+                    <BeginDirectMetEen />
+                    <RijlessenVanaf />
+                    <FlexibelKwalitatief />
+                    <RijlessenApeldoorn />
+                    <RijscholenApeldoorn />
+                </Stack>
+            </Container>
         </Box>
     )
 }
