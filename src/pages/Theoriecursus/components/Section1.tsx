@@ -12,7 +12,7 @@ export default function Section1() {
             <Box my={10}>
                 <Section
                     leftContent={
-                        <VStack align="start" p={5}>
+                        <VStack align="start" >
                             <Heading size="xl">De theoriecursus</Heading>
 
                             <Text fontSize="14px" py={2}>
