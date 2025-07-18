@@ -1,6 +1,5 @@
 import {
     Box,
-    Button,
     Heading,
     Icon,
     Image,
@@ -20,36 +19,29 @@ export default function Section1() {
             <Box my={10}>
                 <Section
                     leftContent={
-                        <Box borderRadius="lg" overflow="hidden" w="100%">
-                            <Image
-                                src={imagery}
-                                alt=""
-                                w="100%"
-                                h="auto"
-                                p={10}
-                            />
-                        </Box>
-                    }
-                    rightContent={
                         <VStack align="start" p={5}>
-                            <Heading size="xl">Over DIEP Opleidingen</Heading>
+                            <Heading size="xl">
+                                Haal je rijbewijs B bij DIEP Opleidingen; de 1#
+                                autorijschool in Apeldoorn en omstreken!
+                            </Heading>
 
                             <Text fontSize="14px" py={2}>
-                                DIEP Opleidingen is een rijschool dat is
-                                opgericht in 2012. Wij hechten waarde aan
-                                transparantie en betrouwbaarheid. Wij willen
-                                voornamelijk onze leerlingen leren om zo veilig
-                                mogelijk te anticiperen in het verkeer. Al onze
-                                rijinstructeurs zijn vakbekwaam en ervaren. Onze
-                                rijinstructeurs begeleiden op een geduldige en
-                                enthousiaste wijze tijdens de rijlessen.
+                                Het behalen van je rijbewijs B is een grote stap
+                                naar het volwassen worden. Daarom vinden wij het
+                                belangrijk om onze leerlingen op een
+                                verantwoordelijke en veilige manier, vlot worden
+                                voorbereid om in één keer het rijbewijs te
+                                halen. Dit doen we samen met onze zeer ervaren
+                                instructeurs. In een prettige en leerzame
+                                omgeving. Dit is terug te zien in ons zeer hoge
+                                slagingspercentage.
                             </Text>
 
                             <VStack align="start" pt={2}>
                                 {[
-                                    "Zeer lage tarieven",
-                                    "Geen wachttijd, direct starten met je rijopleiding",
-                                    "Proefles geheel vrijblijvend"
+                                    "Examengerichte rijlessen",
+                                    "Hoog slagingspercentage",
+                                    "Goed onderhouden lesauto’s"
                                 ].map((item, i) => (
                                     <Text key={i} fontSize={["14px", "12px"]}>
                                         <Icon
@@ -65,15 +57,13 @@ export default function Section1() {
                             </VStack>
 
                             <Text fontSize="14px" py={2}>
-                                Onze lesauto’s zijn altijd goed onderhouden en
-                                verzekerd volgens de normen. We hebben een
-                                unieke, uitgebreide leerlingen app met
-                                instructiekaart. Je hebt inzage op rooster van
-                                jouw rijinstructeur en kunt zelf je rijles
-                                inplannen. Wij zijn zeer succesvol in de sector
-                                en geven ook nog eens rijles in het Engels. Wij
-                                zijn van mening dat wij de meest kwalitatieve
-                                rijopleiding geven!
+                                Je hebt bij DIEP Opleidingen de mogelijkheid om
+                                autorijles te volgen in zowel een
+                                handgeschakelde en automaat lesauto. Let er wel
+                                op dat je met een automaat rijbewijs (rijbewijs
+                                B met code 78) geen handgeschakelde auto mag
+                                rijden. Met een rijbewijs B mag je wel rijden in
+                                een automaat auto.
                             </Text>
 
                             <ContactBtns
@@ -88,6 +78,17 @@ export default function Section1() {
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>
+                    }
+                    rightContent={
+                        <Box borderRadius="lg" overflow="hidden" w="100%">
+                            <Image
+                                src={imagery}
+                                alt=""
+                                w="100%"
+                                h="auto"
+                                p={10}
+                            />
+                        </Box>
                     }
                 />
             </Box>

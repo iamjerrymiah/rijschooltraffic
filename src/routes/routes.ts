@@ -18,6 +18,9 @@ const Teuge = lazy(() => import("../pages/Teuge/Teuge"));
 const Twello = lazy(() => import("../pages/Twello/Twello"));
 const Vaassen = lazy(() => import("../pages/Vaassen/Vaassen"));
 const Contact = lazy(() => import("../pages/Contact/Contact"));
+const Autorijles = lazy(() => import("../pages/Autorijles/Autorijles"));
+const Motorrijles = lazy(() => import("../pages/Motorrijles/Motorrijles"));
+const Theoriecursus = lazy(() => import("../pages/Theoriecursus/Theoriecursus"));
 
 
 const routeConfig = [
@@ -120,6 +123,24 @@ const routeConfig = [
     {
         path: "/contact",
         component: Contact,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/autorijschool-apeldoorn",
+        component: Autorijles,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/motorrijles-apeldoorn",
+        component: Motorrijles,
+        auth: false,
+        layout: Layout,
+    },
+    {
+        path: "/theoriecursus",
+        component: Theoriecursus,
         auth: false,
         layout: Layout,
     },
