@@ -73,10 +73,10 @@ export default function Header() {
             {name: "Spoedcursus", onUse: ()=>navigate(`/spoedcursus`)},
             {name: "Opfriscursus", onUse: ()=>navigate(`/opfriscursus`)},
         ]},
-        {tile: "Werken bij DIEP", link: '/werken-bij-diep', asChildren: []},
-        {tile: "Reviews", link: '/reviews', asChildren: []},
+        // {tile: "Werken bij DIEP", link: '/werken-bij-diep', asChildren: []},
+        // {tile: "Reviews", link: '/reviews', asChildren: []},
         {tile: "Contact", link: '/contact', asChildren: []},
-        {tile: "Driving School", link: '/driving-school', asChildren: []},
+        // {tile: "Driving School", link: '/driving-school', asChildren: []},
     ];
 
     const features = [
