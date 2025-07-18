@@ -9,13 +9,16 @@ import {
     Textarea,
     Button,
     SimpleGrid,
-    Stack
+    Stack,
+    Icon
 } from "@chakra-ui/react";
 
-import heroImg from "../../../assets/img/hero-img.png";
-import { Container } from "../../../styling/layout";
+import heroImg from "../../assets/img/overons_hero.jpeg";
+import { Container } from "../../styling/layout";
+import ContactBtns from "../Button/ContactBtns";
+import { MdPhone } from "react-icons/md";
 
-export default function Hero({ region }: any) {
+export default function ReqTrialLesson({ region }: any) {
     return (
         <Box
             bgImage={heroImg}
@@ -36,20 +39,11 @@ export default function Hero({ region }: any) {
                     {/* Left Column */}
                     <Box color="white" maxW="600px">
                         <Heading size="2xl">
-                            Rijschool{" "}
-                            <Text as="span" color="#00AEEF">
-                                {region ? region : "Apeldoorn"}
+                            Daarom{" "}
+                            <Text as="span" color="orange">
+                                DIEP
                             </Text>
                         </Heading>
-
-                        <Text
-                            fontSize="xl"
-                            mt={2}
-                            fontWeight="bold"
-                            color="orange.300"
-                        >
-                            De beste start voor je rijopleiding sinds 2012!{" "}
-                        </Text>
 
                         <Text mt={4} fontSize="md">
                             Wij van Rijschool {region ? region : "Apeldoorn"}{" "}
@@ -59,7 +53,7 @@ export default function Hero({ region }: any) {
                             halen. Plan nu je proefles in en ervaar het zelf!
                         </Text>
 
-                        <VStack mt={4} align="start" spacing={2}>
+                        <VStack my={4} align="start" spacing={2}>
                             {[
                                 "De rijschool bestaat sinds 2012",
                                 "Duidelijk en eerlijk, geen kleine lettertjes!",
@@ -80,23 +74,15 @@ export default function Hero({ region }: any) {
                             ))}
                         </VStack>
 
-                        <Flex mt={6} gap={[4, 2]} direction={["column", "row"]}>
-                            <Button
-                                fontSize={"12px"}
-                                fontWeight={400}
-                                colorScheme="blue"
-                                variant="solid"
-                            >
-                                📞085 060 41 10
-                            </Button>
-                            <Button
-                                fontSize={"12px"}
-                                fontWeight={400}
-                                colorScheme="orange"
-                            >
-                                Gratis proefles aanvragen →
-                            </Button>
-                        </Flex>
+                        <ContactBtns
+                            leftIcon={
+                                <Icon
+                                    as={MdPhone as unknown as React.ElementType}
+                                />
+                            }
+                            leftText="085 060 41 10"
+                            removeRightBtn={true}
+                        />
                     </Box>
 
                     {/* Right Column - Form */}
@@ -115,11 +101,12 @@ export default function Hero({ region }: any) {
                             color="white"
                             fontWeight="bold"
                         >
-                            Proefles aanvragen
+                            Meld je aan voor een opleiding
                         </Box>
 
-                        <Text fontSize="15px" mb={4} textAlign="center">
-                            Proefles is gratis i.c.m. een lespakket.
+                        <Text fontSize="15px" mb={4} textAlign="center" px={5}>
+                            U wordt vervolgens binnen 2 werkdagen vrijblijvend
+                            teruggebeld
                         </Text>
 
                         <Stack px={6}>

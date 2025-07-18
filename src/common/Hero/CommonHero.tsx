@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 import heroImg from "../../assets/img/overons_hero.jpeg";
 
