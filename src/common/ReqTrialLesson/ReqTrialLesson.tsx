@@ -45,14 +45,6 @@ export default function ReqTrialLesson({ region }: any) {
                             </Text>
                         </Heading>
 
-                        <Text mt={4} fontSize="md">
-                            Wij van Rijschool {region ? region : "Apeldoorn"}{" "}
-                            geven jou de meest kwalitatieve rijopleidingen van
-                            Nederland. Wij werken persoonsgericht en kijken naar
-                            wat jij nodig hebt om je rijbewijs in één keer te
-                            halen. Plan nu je proefles in en ervaar het zelf!
-                        </Text>
-
                         <VStack my={4} align="start" spacing={2}>
                             {[
                                 "De rijschool bestaat sinds 2012",
