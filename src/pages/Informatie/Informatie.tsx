@@ -11,6 +11,7 @@ import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
 import Section7 from "./components/Section7";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
+import Reviews from "../Home/components/Reviews";
 
 function InformatiePage() {
   return (
@@ -46,6 +47,7 @@ function InformatiePage() {
 
       <CallBackReq />
       <Partners />
+      <Reviews />
     </Box>
   );
 }

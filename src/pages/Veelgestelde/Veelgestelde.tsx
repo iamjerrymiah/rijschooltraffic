@@ -4,6 +4,7 @@ import CommonHero from "../../common/Hero/CommonHero";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import Partners from "../Home/components/Partners";
+import Reviews from "../Home/components/Reviews";
 
 function VeelgesteldePage() {
   return (
@@ -18,6 +19,7 @@ function VeelgesteldePage() {
       </Stack>
       <CallBackReq />
       <Partners />
+      <Reviews />
     </Box>
   );
 }

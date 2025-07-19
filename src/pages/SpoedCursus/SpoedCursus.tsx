@@ -7,6 +7,7 @@ import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import Section1 from "./components/Section1";
 import Section3 from "./components/Section3";
+import Reviews from "../Home/components/Reviews";
 
 function SpoedcursusPage() {
     return (
@@ -29,6 +30,7 @@ function SpoedcursusPage() {
             </Stack>
             <Partners />
             <CallBackReq />
+            <Reviews />
         </Box>
     );
 }

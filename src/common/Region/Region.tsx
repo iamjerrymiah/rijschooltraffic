@@ -12,6 +12,9 @@ import SpoedcursusApeldoorn from "../../pages/Home/components/SpoedcursusApeldoo
 import MotorrijschoolApeldoorn from "../../pages/Home/components/MotorrijschoolApeldoorn";
 import OpfriscursusApeldoorn from "../../pages/Home/components/OpfriscursusApeldoorn";
 import TheoriecursusApeldoorn from "../../pages/Home/components/TheoriecursusApeldoorn";
+import Partners from "../../pages/Home/components/Partners";
+import Reviews from "../../pages/Home/components/Reviews";
+import LessonPackage from "../LessonPackage/LessonPackage";
 
 export default function Region({ region }: any) {
     return (
@@ -35,6 +38,11 @@ export default function Region({ region }: any) {
                     <MotorrijschoolApeldoorn region={region} />
                     <OpfriscursusApeldoorn region={region} />
                     <TheoriecursusApeldoorn region={region} />
+                </Stack>
+                <Partners />
+                <Reviews />
+                <Stack px={[4, 10, 10, 28]}>
+                    <LessonPackage />
                 </Stack>
             </Container>
         </Box>

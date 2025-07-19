@@ -8,6 +8,7 @@ import Section3 from "./components/Section3";
 import ReqTrialLesson from "../../common/ReqTrialLesson/ReqTrialLesson";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
+import Reviews from "../Home/components/Reviews";
 
 function AutorijlesPage() {
     return (
@@ -32,6 +33,7 @@ function AutorijlesPage() {
             </Stack>
             <CallBackReq />
             <Partners />
+            <Reviews />
         </Box>
     );
 }

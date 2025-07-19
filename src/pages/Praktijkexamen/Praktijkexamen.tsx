@@ -5,6 +5,7 @@ import CommonHero from "../../common/Hero/CommonHero";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
+import Reviews from "../Home/components/Reviews";
 
 
 function PraktijkexamenPage() {
@@ -26,6 +27,7 @@ function PraktijkexamenPage() {
 
       <CallBackReq />
       <Partners />
+      <Reviews />
     </Box>
   );
 }

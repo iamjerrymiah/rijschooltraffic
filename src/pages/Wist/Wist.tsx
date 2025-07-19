@@ -4,6 +4,7 @@ import Partners from "../Home/components/Partners";
 import CommonHero from "../../common/Hero/CommonHero";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
+import Reviews from "../Home/components/Reviews";
 
 function WistPage() {
   return (
@@ -18,6 +19,7 @@ function WistPage() {
       </Stack>
       <CallBackReq />
       <Partners />
+      <Reviews />
     </Box>
   );
 }

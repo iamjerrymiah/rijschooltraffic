@@ -6,14 +6,14 @@ import ReqTrialLesson from "../../common/ReqTrialLesson/ReqTrialLesson";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import Section1 from "./components/Section1";
-
+import Reviews from "../Home/components/Reviews";
 
 function TheoriecursusPage() {
     return (
         <Box w="100%">
             <CommonHero>
                 <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-                    Theoriecursus 
+                    Theoriecursus
                 </Heading>
             </CommonHero>
             <Stack px={[4, 10, 10, 28]}>
@@ -26,6 +26,7 @@ function TheoriecursusPage() {
             </Stack>
             <Partners />
             <CallBackReq />
+            <Reviews />
         </Box>
     );
 }

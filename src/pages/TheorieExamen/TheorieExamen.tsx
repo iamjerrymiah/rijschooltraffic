@@ -7,6 +7,7 @@ import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
+import Reviews from "../Home/components/Reviews";
 
 function TheorieExamenPage() {
   return (
@@ -31,6 +32,7 @@ function TheorieExamenPage() {
       </Stack>
       <CallBackReq />
       <Partners />
+      <Reviews />
     </Box>
   );
 }
