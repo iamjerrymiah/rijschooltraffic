@@ -5,6 +5,7 @@ import CommonHero from "../../common/Hero/CommonHero";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import Section1 from "./component/Section1";
 import Section2 from "./component/Section2";
+import Reviews from "../Home/components/Reviews";
 
 
 function RijSchoolPage() {
@@ -26,6 +27,7 @@ function RijSchoolPage() {
 
       <CallBackReq />
       <Partners />
+      <Reviews />
     </Box>
   );
 }

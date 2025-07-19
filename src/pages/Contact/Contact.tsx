@@ -4,6 +4,7 @@ import Partners from "../Home/components/Partners";
 import CommonHero from "../../common/Hero/CommonHero";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
+import Reviews from "../Home/components/Reviews";
 
 function ContactPage() {
     return (
@@ -17,6 +18,7 @@ function ContactPage() {
                 <Section1 />
                 <Section2 />
             </Stack>
+            <Reviews />
             <Partners />
         </Box>
     );

@@ -6,6 +6,7 @@ import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
+import Reviews from "../Home/components/Reviews";
 
 function LessenVanafPage() {
   return (
@@ -26,6 +27,7 @@ function LessenVanafPage() {
       </Stack>
       <CallBackReq />
       <Partners />
+      <Reviews />
     </Box>
   );
 }
