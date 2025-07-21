@@ -62,7 +62,7 @@ export default function Section1() {
                   h="auto"
                   p={4}
                 />
-                <Button
+                {/* <Button
                   fontSize={"12px"}
                   fontWeight={400}
                   colorScheme="orange"
@@ -70,7 +70,7 @@ export default function Section1() {
                   mt={4}
                 >
                   Ja, bel mij terug! →
-                </Button>
+                </Button> */}
               </Box>
             }
             rightContent={

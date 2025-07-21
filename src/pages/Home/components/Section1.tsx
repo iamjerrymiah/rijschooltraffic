@@ -12,6 +12,7 @@ import Section from "../../../common/Section";
 import { MdCheckCircleOutline, MdPhone } from "react-icons/md";
 
 import imagery from "../../../assets/img/sec1.webp";
+import ContactBtns from "../../../common/Button/ContactBtns";
 
 export default function Section1() {
     return (
@@ -78,29 +79,15 @@ export default function Section1() {
                             Meld je snel aan want vol = vol!
                         </Text>
 
-                        <Box display="flex" gap={4}>
-                            <Button
-                                fontSize={"12px"}
-                                fontWeight={400}
-                                leftIcon={
-                                    <Icon
-                                        as={
-                                            MdPhone as unknown as React.ElementType
-                                        }
-                                    />
-                                }
-                                colorScheme="blue"
-                            >
-                                085 060 41 10
-                            </Button>
-                            <Button
-                                fontSize={"12px"}
-                                fontWeight={400}
-                                colorScheme="orange"
-                            >
-                                Direct aanmelden
-                            </Button>
-                        </Box>
+                        <ContactBtns
+                            leftIcon={
+                                <Icon
+                                    as={MdPhone as unknown as React.ElementType}
+                                />
+                            }
+                            leftText="085 060 41 10"
+                            rightText="Direct aanmelden"
+                        />
                     </VStack>
                 }
                 rightContent={
