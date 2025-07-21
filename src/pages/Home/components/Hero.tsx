@@ -9,11 +9,15 @@ import {
     Textarea,
     Button,
     SimpleGrid,
-    Stack
+    Stack,
+    Icon
 } from "@chakra-ui/react";
 
 import heroImg from "../../../assets/img/hero-img.png";
 import { Container } from "../../../styling/layout";
+import TrialForm from "../../../common/Form/TrialFrom";
+import ContactBtns from "../../../common/Button/ContactBtns";
+import { MdPhone } from "react-icons/md";
 
 export default function Hero({ region }: any) {
     return (
@@ -80,23 +84,15 @@ export default function Hero({ region }: any) {
                             ))}
                         </VStack>
 
-                        <Flex mt={6} gap={[4, 2]} direction={["column", "row"]}>
-                            <Button
-                                fontSize={"12px"}
-                                fontWeight={400}
-                                colorScheme="blue"
-                                variant="solid"
-                            >
-                                📞085 060 41 10
-                            </Button>
-                            <Button
-                                fontSize={"12px"}
-                                fontWeight={400}
-                                colorScheme="orange"
-                            >
-                                Gratis proefles aanvragen →
-                            </Button>
-                        </Flex>
+                        <ContactBtns
+                            leftIcon={
+                                <Icon
+                                    as={MdPhone as unknown as React.ElementType}
+                                />
+                            }
+                            leftText="085 060 41 10"
+                            rightText="Gratis proefles aanvragen"
+                        />
                     </Box>
 
                     {/* Right Column - Form */}
@@ -122,74 +118,7 @@ export default function Hero({ region }: any) {
                             Proefles is gratis i.c.m. een lespakket.
                         </Text>
 
-                        <Stack px={6}>
-                            <Select
-                                fontSize={"12px"}
-                                fontWeight={400}
-                                placeholder="Selecteer je opleiding"
-                            />
-                            <SimpleGrid
-                                columns={{ base: 1, md: 2 }}
-                                spacing={4}
-                            >
-                                <Input
-                                    fontSize={"12px"}
-                                    fontWeight={400}
-                                    placeholder="Achternaam"
-                                />
-                                <Input
-                                    fontSize={"12px"}
-                                    fontWeight={400}
-                                    placeholder="Geboortedatum"
-                                />
-                                <Input
-                                    fontSize={"12px"}
-                                    fontWeight={400}
-                                    placeholder="Email"
-                                />
-                                <Input
-                                    fontSize={"12px"}
-                                    fontWeight={400}
-                                    placeholder="Woonplaats"
-                                />
-                                <Input
-                                    fontSize={"12px"}
-                                    fontWeight={400}
-                                    placeholder="Postcode"
-                                />
-                                <Input
-                                    fontSize={"12px"}
-                                    fontWeight={400}
-                                    placeholder="Adres"
-                                />
-                                <Input
-                                    fontSize={"12px"}
-                                    fontWeight={400}
-                                    placeholder="Telefoonnummer"
-                                />
-                                <Select
-                                    fontSize={"12px"}
-                                    fontWeight={400}
-                                    placeholder="Hoe heb je ons gevonden?"
-                                />
-                            </SimpleGrid>
-                            <Textarea
-                                fontSize={"12px"}
-                                fontWeight={400}
-                                placeholder="Eventuele bericht (niet verplicht)"
-                                mt={4}
-                            />
-                        </Stack>
-
-                        <Button
-                            fontSize={"12px"}
-                            fontWeight={400}
-                            colorScheme="orange"
-                            w="100%"
-                            mt={4}
-                        >
-                            Gratis proefles aanvragen →
-                        </Button>
+                        <TrialForm />
                     </Box>
                 </Flex>
             </Container>

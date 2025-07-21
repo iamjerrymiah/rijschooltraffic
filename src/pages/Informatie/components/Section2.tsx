@@ -41,7 +41,7 @@ export default function Section2() {
             <ContactBtns
               leftIcon={<Icon as={MdPhone as unknown as React.ElementType} />}
               leftText="085 060 41 10"
-              rightText="Contact opnemen"
+              rightText="Gratis proefles aanvragen"
             />
           </>
         }
