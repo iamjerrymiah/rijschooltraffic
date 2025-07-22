@@ -38,3 +38,10 @@ export function preferDateFormat(date = '') {
 export function prettyDateFormat(date = '') {
     return date ? moment(date).format("ll") : '' 
 }
+export function isObjectPropsEmpty (obj:any = {}) {
+    const keys = Object?.keys(obj)
+    if (keys?.length > 0) {
+        return keys.every(k => obj[k] === '' || !obj[k])
+    }
+    return true
+}

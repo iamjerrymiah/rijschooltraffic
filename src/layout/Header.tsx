@@ -42,6 +42,7 @@ import TrialForm from "../common/Form/TrialFrom";
 export default function Header() {
     const navigate = useNavigate();
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const { isOpen: isOpenModal, onOpen: onOpenModal, onClose: onCloseModal } = useDisclosure();
 
     const [active, setActive] = useState("/");
     const [openDropdownIndex, setOpenDropdownIndex] = useState<number | null>(
@@ -236,7 +237,7 @@ export default function Header() {
                             fontSize={"12px"}
                             fontWeight={400}
                             alignSelf={{ base: "stretch", md: "center" }}
-                            onClick={onOpen}
+                            onClick={onOpenModal}
                         >
                             Gratis proefles aanvragen
                         </Button>
@@ -458,8 +459,8 @@ export default function Header() {
             </Box>
 
             <ModalCenter
-                isOpen={isOpen}
-                onClose={onClose}
+                isOpen={isOpenModal}
+                onClose={onCloseModal}
                 body={
                     <>
                         <Center>
