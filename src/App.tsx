@@ -7,14 +7,15 @@ import {
 } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
 import routeConfig from './routes/routes';
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 
 import '@fontsource/inter/500.css'
-import Loader from './common/Loader/Loader';
+// import Loader from './common/Loader/Loader';
+import PageNotFound from './common/PageNotFound';
 
-const RouteWrapper = (children: React.ReactNode | null) => (
-    <Suspense fallback={<Loader />}>{children}</Suspense>
-);
+// const RouteWrapper = (children: React.ReactNode | null) => (
+//     <Suspense fallback={<Loader />}>{children}</Suspense>
+// );
 
 function App() {
 
@@ -42,14 +43,14 @@ function App() {
                 <Route key={index} element={<Layout />}>
                     {/* Public routes */}
                     {publicRoutes?.map(({ path, component: Component }:any) => (
-                        <Route key={path} path={path} element={RouteWrapper(<Component />)} />
+                        <Route key={path} path={path} element={<Component />} />
                     ))}
 
                     {/* Auth routes wrapped in PrivateRoute */}
                     {authRoutes?.length > 0 && (
                         <Route key={`${index}-auth`}>
                             {authRoutes?.map(({ path, component: Component }:any) => (
-                                <Route key={path} path={path} element={RouteWrapper(<Component />)} />
+                                <Route key={path} path={path} element={<Component />} />
                             ))}
 
                         </Route>
@@ -63,7 +64,7 @@ function App() {
         createRoutesFromElements(
             <>
                 {renderRoutesGroupedByLayout(routeConfig)}
-                <Route path="*" element={<div>PAGE NOT FOUND</div>} />
+                <Route path="*" element={<PageNotFound />} />
             </>
         )
     );

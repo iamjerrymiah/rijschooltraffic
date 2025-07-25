@@ -17,7 +17,6 @@ export default function CallBackReq() {
       bgImage={heroImg}
       bgSize="cover"
       bgPosition="center"
-      minH="90vh"
       px={[4, 8, 8, 20]}
       py={{ base: 6, md: 12 }}
     >

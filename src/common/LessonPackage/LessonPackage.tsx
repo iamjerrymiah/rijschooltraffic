@@ -184,7 +184,48 @@ const package3 = [
     }
 ];
 
-export default function LessonPackage() {
+const package4 = [
+    {
+        title: "Theoriecursus",
+        subtitle: "Dag- of avondcursus voor theorie",
+        price: "€100",
+        bg: "blue.600",
+        features: [
+            "Klassikaal les",
+            "1 daagse cursus",
+            "Examengericht",
+            "100% slagingskans",
+        ],
+        cta: "Direct aanmelden"
+    },
+    {
+        title: "Opfriscursus",
+        subtitle: "Inkomen na lang geen auto te hebben gereden",
+        price: "€220",
+        bg: "orange.600",
+        features: [
+            "4 rijlessen van 60 min",
+            "Getrainde rijinstructeurs",
+            "Faalangst deskundige",
+        ],
+        cta: "Direct aanmelden"
+    },
+    {
+        title: "Spoedcursus",
+        subtitle: "Binnen 10 dagen je rijbewijs op zak!",
+        price: "€1000",
+        bg: "green.600",
+        features: [
+            "Rijlespakket volledig op maat",
+            "Zo snel mogelijk afrijden",
+            "Inclusief voorrijden",
+            "Inclusief praktijkexamen",
+        ],
+        cta: "Direct aanmelden"
+    }
+];
+
+export default function LessonPackage({ last }:any) {
     return (
         <Box py={10}>
             <VStack spacing={2} textAlign="center" mb={4}>
@@ -214,6 +255,15 @@ export default function LessonPackage() {
                 heading="Motorrijles pakketten"
                 subHeading="Motorrijlessen voor een categorie A, A code 80, A2 rijbewijs."
             />
+
+            {last && 
+                <PackageListing
+                    columns={[1, 1, 1, 3]}
+                    packages={package4}
+                    heading="Onze cursussen op een rijtje"
+                    // subHeading="Motorrijlessen voor een categorie A, A code 80, A2 rijbewijs."
+                />  
+            }
         </Box>
     );
 }
@@ -225,7 +275,7 @@ function PackageListing({
     packages
 }: {
     heading: string;
-    subHeading: string;
+    subHeading?: string;
     columns?: any;
     packages: any[];
 }) {

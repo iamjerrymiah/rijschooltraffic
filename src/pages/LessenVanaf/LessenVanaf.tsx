@@ -7,6 +7,7 @@ import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
 
 function LessenVanafPage() {
   return (
@@ -16,15 +17,15 @@ function LessenVanafPage() {
           2toDrive – Driving lessons from 16.5
         </Heading>
       </CommonHero>
-      <Stack px={[4, 10, 10, 28]}>
-        <Section1 />
-      </Stack>
-      <Stack px={[4, 10, 10, 28]} my={10} backgroundColor="whitesmoke">
-        <Section2 />
-      </Stack>
-      <Stack px={[4, 10, 10, 28]}>
-        <LessonPackage />
-      </Stack>
+
+      <Section1 />
+      <Section2 />
+
+      <Container>
+        <Stack px={[4, 10, 10, 28]}>
+          <LessonPackage />
+        </Stack>
+      </Container>
       <CallBackReq />
       <Partners />
       <Reviews />

@@ -1,7 +1,6 @@
 import {
     Box,
     Button,
-    Container,
     Heading,
     Icon,
     Image,
@@ -12,10 +11,12 @@ import { MdPhone } from "react-icons/md";
 import ContactBtns from "../../../common/Button/ContactBtns";
 
 import imagery from "../../../assets/img/sec1.webp";
+import { Container } from "../../../styling/layout";
 
 export default function Section2() {
     return (
-        <Box my={10}>
+        <Box bg='whitesmoke' py={10} px={[4,10,10,28]}>
+            <Container>
             <Section
                 leftContent={
                     <Box borderRadius="lg" overflow="hidden" w="100%">
@@ -68,6 +69,7 @@ export default function Section2() {
                     </>
                 }
             />
+            </Container>
         </Box>
     );
 }

@@ -13,10 +13,12 @@ import { MdPhone } from "react-icons/md";
 
 import imagery from "../../../assets/img/lessen_vanaf.webp";
 import googleReview from "../../../assets/img/google-reviews.webp";
+import { Container } from "../../../styling/layout";
 
 export default function Section1() {
   return (
-    <Box mt={10}>
+    <Box py={10} px={[4, 10, 10, 28]}>
+      <Container>
       <Section
         leftContent={
           <Box borderRadius="lg" overflow="hidden" w="100%">
@@ -81,6 +83,7 @@ export default function Section1() {
           />
         }
       />
+      </Container>
     </Box>
   );
 }
