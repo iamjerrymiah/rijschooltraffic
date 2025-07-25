@@ -4,10 +4,12 @@ import { MdPhone } from "react-icons/md";
 import ContactBtns from "../../../common/Button/ContactBtns";
 
 import imagery from "../../../assets/img/thoerie_img.webp";
+import { Container } from "../../../styling/layout";
 
 export default function Section1() {
   return (
-    <Box my={10}>
+    <Box py={10} px={[4,10,10,28]}>
+      <Container>
       <Section
         leftContent={
           <Box borderRadius="lg" overflow="hidden" w="100%">
@@ -49,6 +51,7 @@ export default function Section1() {
           </>
         }
       />
+      </Container>
     </Box>
   );
 }

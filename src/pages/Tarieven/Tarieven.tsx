@@ -7,6 +7,7 @@ import Section3 from "./components/Section3";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
 
 function OverOnPage() {
     return (
@@ -16,12 +17,14 @@ function OverOnPage() {
                     Tarieven
                 </Heading>
             </CommonHero>
-            <Stack px={[4, 10, 10, 28]}>
-                <LessonPackage />
-            </Stack>
-            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-                <Section2 />
-            </Stack>
+            
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <LessonPackage last />
+                </Stack>
+            </Container>
+
+            <Section2 />
             <Section3 />
             <CallBackReq />
             <Partners />

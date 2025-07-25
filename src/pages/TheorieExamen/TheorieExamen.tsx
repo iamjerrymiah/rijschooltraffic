@@ -8,6 +8,7 @@ import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
 
 function TheorieExamenPage() {
   return (
@@ -18,18 +19,16 @@ function TheorieExamenPage() {
         </Heading>
       </CommonHero>
 
-      <Stack px={[4, 10, 10, 28]}>
-        <Section1 />
-      </Stack>
+      <Section1 />
+      <Section2 />
 
-      <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-        <Section2 />
-      </Stack>
-
-      <Stack px={[4, 10, 10, 28]}>
-        <Section3 />
-        <LessonPackage />
-      </Stack>
+      <Container>
+        <Stack px={[4, 10, 10, 28]}>
+          <Section3 />
+          <LessonPackage />
+        </Stack>
+      </Container>
+      
       <CallBackReq />
       <Partners />
       <Reviews />
