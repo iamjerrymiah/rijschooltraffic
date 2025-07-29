@@ -7,27 +7,27 @@ import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import Reviews from "../Home/components/Reviews";
 
 function WistPage() {
-  return (
-    <Box w="100%">
-      <CommonHero>
-        <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-          Wist jij dat …
-        </Heading>
-      </CommonHero>
-      <Stack px={[4, 10, 10, 28]}>
-        <LessonPackage />
-      </Stack>
-      <CallBackReq />
-      <Partners />
-      <Reviews />
-    </Box>
-  );
+    return (
+        <Box w="100%">
+            <CommonHero>
+                <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
+                    Wist jij dat …
+                </Heading>
+            </CommonHero>
+            <Stack px={[4, 10, 10, 28]}>
+                <LessonPackage />
+            </Stack>
+            <CallBackReq />
+            <Partners />
+            {/* <Reviews /> */}
+        </Box>
+    );
 }
 
 export default function Wist() {
-  return (
-    <PageMainContainer title="Wist jij dat" description="">
-      <WistPage />
-    </PageMainContainer>
-  );
+    return (
+        <PageMainContainer title="Wist jij dat" description="">
+            <WistPage />
+        </PageMainContainer>
+    );
 }

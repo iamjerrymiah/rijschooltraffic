@@ -8,30 +8,30 @@ import Section1 from "./components/Section1";
 import Reviews from "../Home/components/Reviews";
 
 function EigenPage() {
-  return (
-    <Box w="100%">
-      <CommonHero>
-        <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-          Eigen verklaring
-        </Heading>
-      </CommonHero>
+    return (
+        <Box w="100%">
+            <CommonHero>
+                <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
+                    Eigen verklaring
+                </Heading>
+            </CommonHero>
 
-      <Stack px={[4, 10, 10, 28]}>
-        <Section1 />
-        <LessonPackage />
-      </Stack>
+            <Stack px={[4, 10, 10, 28]}>
+                <Section1 />
+                <LessonPackage />
+            </Stack>
 
-      <CallBackReq />
-      <Partners />
-      <Reviews />
-    </Box>
-  );
+            <CallBackReq />
+            <Partners />
+            {/* <Reviews /> */}
+        </Box>
+    );
 }
 
 export default function Eigen() {
-  return (
-    <PageMainContainer title="Eigen verklaring" description="">
-      <EigenPage />
-    </PageMainContainer>
-  );
+    return (
+        <PageMainContainer title="Eigen verklaring" description="">
+            <EigenPage />
+        </PageMainContainer>
+    );
 }

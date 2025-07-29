@@ -1,11 +1,4 @@
-import {
-    Box,
-    Heading,
-    Icon,
-    Image,
-    Text,
-    VStack
-} from "@chakra-ui/react";
+import { Box, Heading, Icon, Image, Text, VStack } from "@chakra-ui/react";
 import { Container } from "../../../styling/layout";
 import Section from "../../../common/Section";
 import { MdCheckCircleOutline, MdPhone } from "react-icons/md";
@@ -21,8 +14,9 @@ export default function Section1() {
                     leftContent={
                         <VStack align="start">
                             <Heading size="xl">
-                                Haal je rijbewijs B bij DIEP Opleidingen; de 1#
-                                autorijschool in Apeldoorn en omstreken!
+                                Haal je rijbewijs B bij RijSchool Traffic
+                                Opleidingen; de 1# autorijschool in Apeldoorn en
+                                omstreken!
                             </Heading>
 
                             <Text fontSize="14px" py={2}>
@@ -57,7 +51,7 @@ export default function Section1() {
                             </VStack>
 
                             <Text fontSize="14px" py={2}>
-                                Je hebt bij DIEP Opleidingen de mogelijkheid om
+                                Je hebt bij RijSchool Traffic de mogelijkheid om
                                 autorijles te volgen in zowel een
                                 handgeschakelde en automaat lesauto. Let er wel
                                 op dat je met een automaat rijbewijs (rijbewijs
@@ -74,7 +68,7 @@ export default function Section1() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

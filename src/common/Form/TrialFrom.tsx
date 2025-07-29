@@ -113,10 +113,10 @@ export default function TrialForm() {
                 >
                     {[
                         "Autorijles",
-                        "Motorrijles",
+                        // "Motorrijles",
                         "Spoedcursus",
-                        "Theoriecursus",
-                        "Opfriscursus"
+                        // "Theoriecursus",
+                        // "Opfriscursus"
                     ].map((status: any, i) => (
                         <option key={i} value={status}>
                             {capCase(status)}{" "}

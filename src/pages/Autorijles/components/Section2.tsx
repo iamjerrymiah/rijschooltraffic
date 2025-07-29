@@ -32,12 +32,12 @@ export default function Section2() {
                                 Wil je een autorijbewijs halen? Met een
                                 rijbewijs B ben je bevoegd om een auto te
                                 besturen van maximaal 3500 kg. Dankzij de
-                                examengerichte rijlessen bij DIEP Opleidingen is
-                                het halen van je B rijbewijs een makkie. Veel
-                                leerlingen die zijn overgestapt van een andere
-                                rijschool hebben ons laten weten dat zij direct
-                                een verschil hebben gemerkt in de kwaliteit van
-                                de rijlessen.
+                                examengerichte rijlessen bij RijSchool Traffic
+                                Opleidingen is het halen van je B rijbewijs een
+                                makkie. Veel leerlingen die zijn overgestapt van
+                                een andere rijschool hebben ons laten weten dat
+                                zij direct een verschil hebben gemerkt in de
+                                kwaliteit van de rijlessen.
                             </Text>
 
                             <Text fontSize="14px" py={2}>
@@ -68,7 +68,7 @@ export default function Section2() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

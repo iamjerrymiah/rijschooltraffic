@@ -12,7 +12,7 @@ export default function Section1() {
             <Box my={10}>
                 <Section
                     leftContent={
-                        <VStack align="start" >
+                        <VStack align="start">
                             <Heading size="xl">
                                 Snel je rijopleiding afronden met de spoedcursus
                             </Heading>
@@ -46,10 +46,12 @@ export default function Section1() {
 
                             <Box width="100%" shadow="xl" p={5} rounded="xl">
                                 <Text fontSize="14px" py={2}>
-                                    Intakeles 120 minuten --------------------- €120
+                                    Intakeles 120 minuten ---------------------
+                                    €120
                                 </Text>
                                 <Text fontSize="14px" py={2}>
-                                    Spoedcursus gebaseerd op de intakeles vanaf -------- €890
+                                    Spoedcursus gebaseerd op de intakeles vanaf
+                                    -------- €890
                                 </Text>
                             </Box>
 
@@ -61,7 +63,7 @@ export default function Section1() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

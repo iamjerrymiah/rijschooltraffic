@@ -33,10 +33,10 @@ export default function Section2() {
                     rightContent={
                         <VStack align="start">
                             <Heading size="xl">
-                                Motorkleding bij Diep Opleidingen
+                                Motorkleding bij RijSchool Traffic Opleidingen
                             </Heading>
                             <Text fontSize="14px" py={2}>
-                                Bij Diep Opleidingen stellen we veiligheid
+                                Bij RijSchool Traffic stellen we veiligheid
                                 voorop, daarom voorzien wij onze leerlingen van
                                 de essentiële motorkleding voor hun rijlessen.
                                 We willen ervoor zorgen dat elke leerling
@@ -84,7 +84,7 @@ export default function Section2() {
                             </Text>
 
                             <Text fontSize="14px" py={2}>
-                                Bij Diep Opleidingen streven we ernaar om onze
+                                Bij RijSchool Traffic streven we ernaar om onze
                                 leerlingen de best mogelijke rijervaring te
                                 bieden, met aandacht voor veiligheid, comfort en
                                 hygiëne. Met de juiste motorkleding kunnen onze
@@ -99,7 +99,7 @@ export default function Section2() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

@@ -40,7 +40,7 @@ export default function Region({ region }: any) {
                     <TheoriecursusApeldoorn region={region} />
                 </Stack>
                 <Partners />
-                <Reviews />
+                {/* <Reviews /> */}
                 <Stack px={[4, 10, 10, 28]}>
                     <LessonPackage />
                 </Stack>

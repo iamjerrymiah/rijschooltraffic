@@ -7,35 +7,34 @@ import Section1 from "./component/Section1";
 import Section2 from "./component/Section2";
 import Reviews from "../Home/components/Reviews";
 
-
 function RijSchoolPage() {
-  return (
-    <Box w="100%">
-      <CommonHero>
-        <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-          Rijschool machtigen
-        </Heading>
-      </CommonHero>
+    return (
+        <Box w="100%">
+            <CommonHero>
+                <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
+                    Rijschool machtigen
+                </Heading>
+            </CommonHero>
 
-      <Stack px={[4, 10, 10, 28]}>
-        <Section1 />
-      </Stack>
+            <Stack px={[4, 10, 10, 28]}>
+                <Section1 />
+            </Stack>
 
-      <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-        <Section2 />
-      </Stack>
+            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
+                <Section2 />
+            </Stack>
 
-      <CallBackReq />
-      <Partners />
-      <Reviews />
-    </Box>
-  );
+            <CallBackReq />
+            <Partners />
+            {/* <Reviews /> */}
+        </Box>
+    );
 }
 
 export default function RijSchool() {
-  return (
-    <PageMainContainer title="Rijschool Machtigen" description="">
-      <RijSchoolPage />
-    </PageMainContainer>
-  );
+    return (
+        <PageMainContainer title="Rijschool Machtigen" description="">
+            <RijSchoolPage />
+        </PageMainContainer>
+    );
 }

@@ -14,10 +14,10 @@ import { Container } from '../../../styling/layout';
 
 const courses = [
     {title: 'Autorijles', image: imagery, link: `/autorijschool-apeldoorn`},
-    {title: 'Motorrijles', image: regionImg, link: `/motorrijles-apeldoorn`},
+    // {title: 'Motorrijles', image: regionImg, link: `/motorrijles-apeldoorn`},
     {title: 'Spoedcursus', image: informatie3, link: `/spoedcursus`},
-    {title: 'Theoriecursus', image: region3Img, link: `/theoriecursus`},
-    {title: 'Opfriscursus', image: imagery, link: `/opfriscursus`},
+    // {title: 'Theoriecursus', image: region3Img, link: `/theoriecursus`},
+    // {title: 'Opfriscursus', image: imagery, link: `/opfriscursus`},
 ];
 
 export default function CourseGrid() {
@@ -35,7 +35,7 @@ export default function CourseGrid() {
             </VStack>
 
             <SimpleGrid
-                columns={[1,1,1,5]}
+                columns={[1,1,1,2]}
                 spacing={6}
                 justifyContent="center"
             >

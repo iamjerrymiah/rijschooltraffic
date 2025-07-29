@@ -30,7 +30,7 @@ function SpoedcursusPage() {
             </Stack>
             <Partners />
             <CallBackReq />
-            <Reviews />
+            {/* <Reviews /> */}
         </Box>
     );
 }

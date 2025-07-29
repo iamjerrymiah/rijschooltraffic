@@ -7,9 +7,14 @@ import contact3 from "../../../assets/img/contact3.webp";
 
 export default function Section1() {
     const cards = [
-        { title: "Bel ons", value: "085 060 41 10", img: contact1 },
-        { title: "Whatsapp", value: "085 060 41 10", img: contact2 },
-        { title: "Email", value: "info@diepopleidingen.nl", img: contact3 }
+        {
+            title: "Bel ons",
+            value: "+31685841714",
+            img: contact1,
+            link: "tel:+31685841714"
+        },
+        { title: "Whatsapp", value: "+31685841714", img: contact2, link: "https://wa.me/+31685841714" },
+        { title: "Email", value: " traffic70@live.com", img: contact3, link: "mailto: traffic70@live.com" },
     ];
 
     return (
@@ -21,18 +26,30 @@ export default function Section1() {
                     of een mailtje te sturen. Alle gegevens kan je hieronder
                     vinden.
                 </Text>
-                <SimpleGrid columns={{ base: 1, lg: 2, xl: 3 }} spacing={4}
-                >
+                <SimpleGrid columns={{ base: 1, lg: 2, xl: 3 }} spacing={4}>
                     {cards.map((card, i) => {
                         return (
-                            <Button p={10} display='flex' shadow="xl" rounded="lg" key={i}>
-                                <Image src={card.img} alt="" w="20%" h="auto" />
-                                <VStack pl={5}>
-                                    <Text>{card.title}</Text>
-                                    <Text>{card.value}</Text>
-                                </VStack>
-                            </Button>
-                        )
+                            <a rel="noreferrer" href={card?.link || ""} target="_blank" key={i}>
+                                <Button
+                                    p={10}
+                                    display="flex"
+                                    shadow="xl"
+                                    rounded="lg"
+                                    key={i}
+                                >
+                                    <Image
+                                        src={card.img}
+                                        alt=""
+                                        w="40px"
+                                        h="auto"
+                                    />
+                                    <VStack pl={5}>
+                                        <Text>{card.title}</Text>
+                                        <Text>{card.value}</Text>
+                                    </VStack>
+                                </Button>
+                            </a>
+                        );
                     })}
                 </SimpleGrid>
 
