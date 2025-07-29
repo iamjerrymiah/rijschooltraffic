@@ -92,33 +92,33 @@ export default function Header() {
                 }
             ]
         },
-        {
-            tile: "Onze regio’s",
-            link: "/0nze-regios",
-            asChildren: [
-                { name: "Rijschool Apeldoorn", onUse: () => navigate(`/`) },
-                {
-                    name: "Rijschool Beekbergen",
-                    onUse: () => navigate(`/rijschool-beekbergen`)
-                },
-                {
-                    name: "Rijschool Hoenderloo",
-                    onUse: () => navigate(`/rijschool-hoenderloo`)
-                },
-                {
-                    name: "Rijschool Teuge",
-                    onUse: () => navigate(`/rijschool-teuge`)
-                },
-                {
-                    name: "Rijschool Twello",
-                    onUse: () => navigate(`/rijschool-twello`)
-                },
-                {
-                    name: "Rijschool Vaassen",
-                    onUse: () => navigate(`/rijschool-vaassen`)
-                }
-            ]
-        },
+        // {
+        //     tile: "Onze regio’s",
+        //     link: "/0nze-regios",
+        //     asChildren: [
+        //         { name: "Rijschool Traffic", onUse: () => navigate(`/`) },
+        //         {
+        //             name: "Rijschool Beekbergen",
+        //             onUse: () => navigate(`/rijschool-beekbergen`)
+        //         },
+        //         {
+        //             name: "Rijschool Hoenderloo",
+        //             onUse: () => navigate(`/rijschool-hoenderloo`)
+        //         },
+        //         {
+        //             name: "Rijschool Teuge",
+        //             onUse: () => navigate(`/rijschool-teuge`)
+        //         },
+        //         {
+        //             name: "Rijschool Twello",
+        //             onUse: () => navigate(`/rijschool-twello`)
+        //         },
+        //         {
+        //             name: "Rijschool Vaassen",
+        //             onUse: () => navigate(`/rijschool-vaassen`)
+        //         }
+        //     ]
+        // },
         {
             tile: "Cursussen",
             link: "/cursussen",
@@ -127,16 +127,16 @@ export default function Header() {
                     name: "Autorijles",
                     onUse: () => navigate(`/autorijschool-apeldoorn`)
                 },
-                {
-                    name: "Motorrijles",
-                    onUse: () => navigate(`/motorrijles-apeldoorn`)
-                },
-                {
-                    name: "Theoriecursus",
-                    onUse: () => navigate(`/theoriecursus`)
-                },
+                // {
+                //     name: "Motorrijles",
+                //     onUse: () => navigate(`/motorrijles-apeldoorn`)
+                // },
+                // {
+                //     name: "Theoriecursus",
+                //     onUse: () => navigate(`/theoriecursus`)
+                // },
                 { name: "Spoedcursus", onUse: () => navigate(`/spoedcursus`) },
-                { name: "Opfriscursus", onUse: () => navigate(`/opfriscursus`) }
+                // { name: "Opfriscursus", onUse: () => navigate(`/opfriscursus`) }
             ]
         },
         // {tile: "Werken bij DIEP", link: '/werken-bij-diep', asChildren: []},
@@ -173,7 +173,7 @@ export default function Header() {
                 >
                     {/* Logo and Features */}
                     <Flex gap={4} flexWrap="wrap" align="center">
-                        <Image src="/logo.png" alt="Logo" h="40px" />
+                        <Image src="/logo.jpg" alt="Logo" w="100px" h="80px" />
 
                         <Hide below="md">
                             <VStack
@@ -203,7 +203,7 @@ export default function Header() {
                         gap={2}
                         mt={{ base: 4, md: 0 }}
                     >
-                        <VStack align="flex-start" fontSize="12px" spacing={0}>
+                        {/* <VStack align="flex-start" fontSize="12px" spacing={0}>
                             <Text fontStyle="italic">
                                 {" "}
                                 “Dankzij leerzame en gezellige lessen in no-time
@@ -225,7 +225,7 @@ export default function Header() {
                                     Bekijk alle reviews.
                                 </Text>
                             </HStack>
-                        </VStack>
+                        </VStack> */}
                         <Button
                             leftIcon={
                                 <Icon

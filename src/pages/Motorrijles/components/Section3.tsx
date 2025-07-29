@@ -15,18 +15,18 @@ export default function Section3() {
                     leftContent={
                         <VStack align="start" p={5}>
                             <Heading size="xl">
-                                Wil jij motorrijles in Apeldoorn volgen bij DIEP
-                                opleidingen? Dit moet je weten over de
-                                verschillende categorieën motorrijbewijs
+                                Wil jij motorrijles in Apeldoorn volgen bij
+                                RijSchool Traffic opleidingen? Dit moet je weten
+                                over de verschillende categorieën motorrijbewijs
                             </Heading>
 
                             <Text fontSize="14px" py={2}>
-                                Bij DIEP Opleidingen bieden we verschillende
-                                categorieën motorrijbewijs aan, zodat je kunt
-                                kiezen op basis van je leeftijd, ervaring en
-                                toekomstige rijbehoeften. Hieronder vind je een
-                                overzicht van de verschillende categorieën en de
-                                bijbehorende voorwaarden:
+                                Bij RijSchool Traffic Opleidingen bieden we
+                                verschillende categorieën motorrijbewijs aan,
+                                zodat je kunt kiezen op basis van je leeftijd,
+                                ervaring en toekomstige rijbehoeften. Hieronder
+                                vind je een overzicht van de verschillende
+                                categorieën en de bijbehorende voorwaarden:
                             </Text>
 
                             <Heading size="md">Rijbewijs A1</Heading>
@@ -49,7 +49,9 @@ export default function Section3() {
                                 ))}
                             </VStack>
 
-                            <Heading size="md" mt={2}>Rijbewijs A2</Heading>
+                            <Heading size="md" mt={2}>
+                                Rijbewijs A2
+                            </Heading>
                             <VStack align="start" pt={2}>
                                 {[
                                     "Leeftijd: Vanaf 20 jaar.",
@@ -70,7 +72,7 @@ export default function Section3() {
                             </VStack>
 
                             <Text fontSize="14px" py={2}>
-                                Je hebt bij DIEP Opleidingen de mogelijkheid om
+                                Je hebt bij RijSchool Traffic de mogelijkheid om
                                 autorijles te volgen in zowel een
                                 handgeschakelde en automaat lesauto. Let er wel
                                 op dat je met een automaat rijbewijs (rijbewijs
@@ -102,7 +104,7 @@ export default function Section3() {
                             <Text fontSize="14px" py={2}>
                                 Als je voor de rijbewijs categorie A, A code 80,
                                 A2 kiest, begeleiden onze ervaren instructeurs
-                                bij DIEP Opleidingen je stap voor stap door het
+                                bij RijSchool Traffic je stap voor stap door het
                                 proces van motorrijden. We zorgen ervoor dat je
                                 de benodigde vaardigheden en kennis opdoet om
                                 veilig en zelfverzekerd de weg op te gaan. Met
@@ -132,7 +134,7 @@ export default function Section3() {
                             </VStack>
 
                             <Text fontSize="14px" py={2}>
-                                Je hebt bij DIEP Opleidingen de mogelijkheid om
+                                Je hebt bij RijSchool Traffic de mogelijkheid om
                                 autorijles te volgen in zowel een
                                 handgeschakelde en automaat lesauto. Let er wel
                                 op dat je met een automaat rijbewijs (rijbewijs
@@ -149,7 +151,7 @@ export default function Section3() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

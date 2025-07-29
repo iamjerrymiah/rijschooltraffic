@@ -1,13 +1,11 @@
 import {
     Box,
-    Button,
     Heading,
     Icon,
     Image,
     Text,
     VStack
 } from "@chakra-ui/react";
-import { Container } from "../../../styling/layout";
 import Section from "../../../common/Section";
 import { MdCheckCircleOutline, MdPhone } from "react-icons/md";
 
@@ -24,7 +22,7 @@ export default function Section1() {
                         <Heading size="lg">
                             Actie! De eerste 10 lessen voor maar
                             <Text ml={1} as="span" color="#00AEEF">
-                                €450,-
+                                €560,-
                             </Text>
                         </Heading>
 
@@ -58,8 +56,8 @@ export default function Section1() {
                         <VStack align="start" pt={2}>
                             {[
                                 "Goedkoopste van Nederland",
-                                "10 rijlessen (5 blokuren van 100 min)",
-                                "€45,- per rijles",
+                                "10 rijlessen (5 blokuren van 120 min)",
+                                "€56,- per rijles",
                                 "Beperkt aantal plekken beschikbaar"
                             ].map((item, i) => (
                                 <Text key={i} fontSize={["14px", "12px"]}>
@@ -85,7 +83,7 @@ export default function Section1() {
                                     as={MdPhone as unknown as React.ElementType}
                                 />
                             }
-                            leftText="085 060 41 10"
+                            leftText="+31685841714"
                             rightText="Direct aanmelden"
                         />
                     </VStack>

@@ -18,7 +18,7 @@ function ContactPage() {
                 <Section1 />
                 <Section2 />
             </Stack>
-            <Reviews />
+            {/* <Reviews /> */}
             <Partners />
         </Box>
     );

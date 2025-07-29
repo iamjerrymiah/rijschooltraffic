@@ -45,24 +45,24 @@ function HomeMain() {
                     <LessonPackage />
                     <AutorijlesApeldoorn />
                     <SpoedcursusApeldoorn />
-                    <MotorrijschoolApeldoorn />
+                    {/* <MotorrijschoolApeldoorn />
                     <OpfriscursusApeldoorn />
-                    <TheoriecursusApeldoorn />
+                    <TheoriecursusApeldoorn /> */}
                 </Stack>
             </Container>
 
             <CallBackReq />
-            <Reviews />
+            {/* <Reviews /> */}
             
             <Container>
                 <Stack px={[4,10,10,28]}>
-                    <FaqSection />
-                    <RijbewijsHalen />
+                    {/* <FaqSection /> */}
                     <BeginDirectMetEen />
+                    {/* <RijbewijsHalen />
                     <RijlessenVanaf />
                     <FlexibelKwalitatief />
                     <RijlessenApeldoorn />
-                    <RijscholenApeldoorn />
+                    <RijscholenApeldoorn /> */}
                 </Stack>
             </Container>
         </Box>

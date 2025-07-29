@@ -7,35 +7,34 @@ import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Reviews from "../Home/components/Reviews";
 
-
 function PraktijkexamenPage() {
-  return (
-    <Box w="100%">
-      <CommonHero>
-        <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-          Praktijkexamen afleggen
-        </Heading>
-      </CommonHero>
+    return (
+        <Box w="100%">
+            <CommonHero>
+                <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
+                    Praktijkexamen afleggen
+                </Heading>
+            </CommonHero>
 
-      <Stack px={[4, 10, 10, 28]}>
-        <Section1 />
-      </Stack>
+            <Stack px={[4, 10, 10, 28]}>
+                <Section1 />
+            </Stack>
 
-      <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-        <Section2 />
-      </Stack>
+            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
+                <Section2 />
+            </Stack>
 
-      <CallBackReq />
-      <Partners />
-      <Reviews />
-    </Box>
-  );
+            <CallBackReq />
+            <Partners />
+            {/* <Reviews /> */}
+        </Box>
+    );
 }
 
 export default function Praktijkexamen() {
-  return (
-    <PageMainContainer title="Praktijkexamen afleggen" description="">
-      <PraktijkexamenPage />
-    </PageMainContainer>
-  );
+    return (
+        <PageMainContainer title="Praktijkexamen afleggen" description="">
+            <PraktijkexamenPage />
+        </PageMainContainer>
+    );
 }

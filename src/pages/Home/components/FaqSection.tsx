@@ -45,7 +45,7 @@ const faqs = [
 ];
 
 const uniquePoints = [
-    "De rijschool bestaat sinds 2012",
+    "De rijschool bestaat sinds 2009",
     "Duidelijk en eerlijk, geen kleine lettertjes!",
     "Veiligheid staat bij ons voorop!",
     "Enthousiaste en geduldige rijinstructeurs",

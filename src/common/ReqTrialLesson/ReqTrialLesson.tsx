@@ -41,13 +41,13 @@ export default function ReqTrialLesson({ region }: any) {
                         <Heading size="2xl">
                             Daarom{" "}
                             <Text as="span" color="orange">
-                                DIEP
+                                RijSchool Traffic
                             </Text>
                         </Heading>
 
                         <VStack my={4} align="start" spacing={2}>
                             {[
-                                "De rijschool bestaat sinds 2012",
+                                "De rijschool bestaat sinds 2009",
                                 "Duidelijk en eerlijk, geen kleine lettertjes!",
                                 "Veiligheid staat op voorop",
                                 "Enthousiaste en geduldige rijinstructeurs",
@@ -72,7 +72,7 @@ export default function ReqTrialLesson({ region }: any) {
                                     as={MdPhone as unknown as React.ElementType}
                                 />
                             }
-                            leftText="085 060 41 10"
+                            leftText="+31685841714"
                             removeRightBtn={true}
                         />
                     </Box>

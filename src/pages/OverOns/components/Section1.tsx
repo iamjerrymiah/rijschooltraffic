@@ -32,11 +32,13 @@ export default function Section1() {
                     }
                     rightContent={
                         <VStack align="start" p={5}>
-                            <Heading size="xl">Over DIEP Opleidingen</Heading>
+                            <Heading size="xl">
+                                Over RijSchool Traffic Opleidingen
+                            </Heading>
 
                             <Text fontSize="14px" py={2}>
-                                DIEP Opleidingen is een rijschool dat is
-                                opgericht in 2012. Wij hechten waarde aan
+                                RijSchool Traffic is een rijschool dat is
+                                opgericht in 2009. Wij hechten waarde aan
                                 transparantie en betrouwbaarheid. Wij willen
                                 voornamelijk onze leerlingen leren om zo veilig
                                 mogelijk te anticiperen in het verkeer. Al onze
@@ -84,7 +86,7 @@ export default function Section1() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

@@ -24,7 +24,7 @@ const features = [
     {
         title: "Rijlessen vanaf 16,5 jaar",
         description:
-            "Je kunt bij DIEP Opleidingen al vanaf 16,5 jaar beginnen met rijlessen en slagen op je 17e verjaardag!"
+            "Je kunt bij RijSchool Traffic Opleidingen al vanaf 16,5 jaar beginnen met rijlessen en slagen op je 17e verjaardag!"
     },
     {
         title: "Betalen in termijnen",

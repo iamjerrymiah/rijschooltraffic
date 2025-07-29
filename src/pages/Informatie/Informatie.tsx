@@ -14,48 +14,48 @@ import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import Reviews from "../Home/components/Reviews";
 
 function InformatiePage() {
-  return (
-    <Box w="100%">
-      <CommonHero>
-        <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-          Informatie voor ouders
-        </Heading>
-      </CommonHero>
+    return (
+        <Box w="100%">
+            <CommonHero>
+                <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
+                    Informatie voor ouders
+                </Heading>
+            </CommonHero>
 
-      <Stack px={[4, 10, 10, 28]}>
-        <Section1 />
-      </Stack>
+            <Stack px={[4, 10, 10, 28]}>
+                <Section1 />
+            </Stack>
 
-      <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-        <Section2 />
-      </Stack>
+            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
+                <Section2 />
+            </Stack>
 
-      <Stack my={20} px={[4, 10, 10, 28]}>
-        <Section3 />
-        <Section4 />
-        <Section5 />
-        <Section6 />
-      </Stack>
+            <Stack my={20} px={[4, 10, 10, 28]}>
+                <Section3 />
+                <Section4 />
+                <Section5 />
+                <Section6 />
+            </Stack>
 
-      <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-        <Section7 />
-      </Stack>
+            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
+                <Section7 />
+            </Stack>
 
-      <Stack px={[4, 10, 10, 28]}>
-        <LessonPackage />
-      </Stack>
+            <Stack px={[4, 10, 10, 28]}>
+                <LessonPackage />
+            </Stack>
 
-      <CallBackReq />
-      <Partners />
-      <Reviews />
-    </Box>
-  );
+            <CallBackReq />
+            <Partners />
+            {/* <Reviews /> */}
+        </Box>
+    );
 }
 
 export default function Informatie() {
-  return (
-    <PageMainContainer title="Informatie voor ouders" description="">
-      <InformatiePage />
-    </PageMainContainer>
-  );
+    return (
+        <PageMainContainer title="Informatie voor ouders" description="">
+            <InformatiePage />
+        </PageMainContainer>
+    );
 }

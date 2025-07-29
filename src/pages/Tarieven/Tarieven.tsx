@@ -17,18 +17,18 @@ function OverOnPage() {
                     Tarieven
                 </Heading>
             </CommonHero>
-            
+
             <Container>
                 <Stack px={[4, 10, 10, 28]}>
                     <LessonPackage last />
                 </Stack>
             </Container>
 
-            <Section2 />
-            <Section3 />
+            {/* <Section2 />
+            <Section3 /> */}
             <CallBackReq />
             <Partners />
-            <Reviews />
+            {/* <Reviews /> */}
         </Box>
     );
 }

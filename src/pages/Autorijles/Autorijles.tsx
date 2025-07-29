@@ -15,7 +15,7 @@ function AutorijlesPage() {
         <Box w="100%">
             <CommonHero>
                 <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-                    Autorijschool Apeldoorn
+                    Autorijles Nijmengen
                 </Heading>
             </CommonHero>
             <Stack px={[4, 10, 10, 28]}>
@@ -33,7 +33,7 @@ function AutorijlesPage() {
             </Stack>
             <CallBackReq />
             <Partners />
-            <Reviews />
+            {/* <Reviews /> */}
         </Box>
     );
 }

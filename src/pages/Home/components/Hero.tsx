@@ -52,7 +52,7 @@ export default function Hero({ region }: any) {
                             fontWeight="bold"
                             color="orange.300"
                         >
-                            De beste start voor je rijopleiding sinds 2012!{" "}
+                            De beste start voor je rijopleiding sinds 2009!{" "}
                         </Text>
 
                         <Text mt={4} fontSize="md">
@@ -65,7 +65,7 @@ export default function Hero({ region }: any) {
 
                         <VStack mt={4} align="start" spacing={2}>
                             {[
-                                "De rijschool bestaat sinds 2012",
+                                "De rijschool bestaat sinds 2009",
                                 "Duidelijk en eerlijk, geen kleine lettertjes!",
                                 "Veiligheid staat op voorop",
                                 "Enthousiaste en geduldige rijinstructeurs",
@@ -90,7 +90,7 @@ export default function Hero({ region }: any) {
                                     as={MdPhone as unknown as React.ElementType}
                                 />
                             }
-                            leftText="085 060 41 10"
+                            leftText="+31685841714"
                             rightText="Gratis proefles aanvragen"
                         />
                     </Box>
