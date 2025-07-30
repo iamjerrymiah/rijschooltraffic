@@ -22,7 +22,7 @@ const package1 = [
         bg: "blue.600",
         features: [
             "10 rijlessen (5x blokuur 100 min)",
-            "€100,- pakket korting",
+            "€50,- pakket korting",
             "Direct beginnen",
             "Vanaf 16,5 jaar",
             "Goedkoper kan niet!"
@@ -250,11 +250,11 @@ export default function LessonPackage({ last }:any) {
                 subHeading="Autorijles in een automaat lesauto voor een rijbewijs B met code 78."
             />
 
-            <PackageListing
+            {/* <PackageListing
                 packages={package3}
                 heading="Motorrijles pakketten"
                 subHeading="Motorrijlessen voor een categorie A, A code 80, A2 rijbewijs."
-            />
+            /> */}
 
             {last && 
                 <PackageListing

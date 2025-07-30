@@ -92,33 +92,33 @@ export default function Header() {
                 }
             ]
         },
-        {
-            tile: "Onze regio’s",
-            link: "/0nze-regios",
-            asChildren: [
-                { name: "Rijschool Apeldoorn", onUse: () => navigate(`/`) },
-                {
-                    name: "Rijschool Beekbergen",
-                    onUse: () => navigate(`/rijschool-beekbergen`)
-                },
-                {
-                    name: "Rijschool Hoenderloo",
-                    onUse: () => navigate(`/rijschool-hoenderloo`)
-                },
-                {
-                    name: "Rijschool Teuge",
-                    onUse: () => navigate(`/rijschool-teuge`)
-                },
-                {
-                    name: "Rijschool Twello",
-                    onUse: () => navigate(`/rijschool-twello`)
-                },
-                {
-                    name: "Rijschool Vaassen",
-                    onUse: () => navigate(`/rijschool-vaassen`)
-                }
-            ]
-        },
+        // {
+        //     tile: "Onze regio’s",
+        //     link: "/0nze-regios",
+        //     asChildren: [
+        //         { name: "Rijschool Apeldoorn", onUse: () => navigate(`/`) },
+        //         {
+        //             name: "Rijschool Beekbergen",
+        //             onUse: () => navigate(`/rijschool-beekbergen`)
+        //         },
+        //         {
+        //             name: "Rijschool Hoenderloo",
+        //             onUse: () => navigate(`/rijschool-hoenderloo`)
+        //         },
+        //         {
+        //             name: "Rijschool Teuge",
+        //             onUse: () => navigate(`/rijschool-teuge`)
+        //         },
+        //         {
+        //             name: "Rijschool Twello",
+        //             onUse: () => navigate(`/rijschool-twello`)
+        //         },
+        //         {
+        //             name: "Rijschool Vaassen",
+        //             onUse: () => navigate(`/rijschool-vaassen`)
+        //         }
+        //     ]
+        // },
         {
             tile: "Cursussen",
             link: "/cursussen",
@@ -127,16 +127,16 @@ export default function Header() {
                     name: "Autorijles",
                     onUse: () => navigate(`/autorijschool-apeldoorn`)
                 },
-                {
-                    name: "Motorrijles",
-                    onUse: () => navigate(`/motorrijles-apeldoorn`)
-                },
-                {
-                    name: "Theoriecursus",
-                    onUse: () => navigate(`/theoriecursus`)
-                },
+                // {
+                //     name: "Motorrijles",
+                //     onUse: () => navigate(`/motorrijles-apeldoorn`)
+                // },
+                // {
+                //     name: "Theoriecursus",
+                //     onUse: () => navigate(`/theoriecursus`)
+                // },
                 { name: "Spoedcursus", onUse: () => navigate(`/spoedcursus`) },
-                { name: "Opfriscursus", onUse: () => navigate(`/opfriscursus`) }
+                // { name: "Opfriscursus", onUse: () => navigate(`/opfriscursus`) }
             ]
         },
         // {tile: "Werken bij DIEP", link: '/werken-bij-diep', asChildren: []},
@@ -221,9 +221,9 @@ export default function Header() {
                                     ))}
                                 </HStack>
                                 <Text>5/5 |</Text>
-                                <Text color="blue.500" cursor="pointer">
+                                {/* <Text color="blue.500" cursor="pointer">
                                     Bekijk alle reviews.
-                                </Text>
+                                </Text> */}
                             </HStack>
                         </VStack>
                         <Button
