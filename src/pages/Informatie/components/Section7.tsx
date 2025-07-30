@@ -11,10 +11,12 @@ import {
 
 import imagery from "../../../assets/img/lessen_vanaf.webp";
 import { MdCheckCircleOutline } from "react-icons/md";
+import { Container } from "../../../styling/layout";
 
 export default function Section7() {
     return (
-        <Box width="100%" py={5}>
+        <Box bg='whitesmoke' py={10} px={[4,10,10,28]}>
+            <Container>
             <Center>
                 <Heading fontSize="4xl" mt={5} mb={10}>
                     Daarom RijSchool Traffic Opleidingen
@@ -73,6 +75,7 @@ export default function Section7() {
                     <Image src={imagery} alt="" w="100%" h="auto" />
                 </Box>
             </SimpleGrid>
+            </Container>
         </Box>
     );
 }

@@ -17,6 +17,7 @@ export default function ContactBtns({
     removeLeftBtn,
     removeRightBtn
 }: any) {
+
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     return (

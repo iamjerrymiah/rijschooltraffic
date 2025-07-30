@@ -25,7 +25,7 @@ export default function Section3() {
                     rightContent={
                         <VStack align="start">
                             <Heading size="xl">
-                                Spoedcursus rijbewijs Apeldoorn
+                                Spoedcursus rijbewijs Nijmengen
                             </Heading>
                             <Text fontSize="14px" py={2}>
                                 Tijdеns dе praktijklеssеn rijd jе doorgaans

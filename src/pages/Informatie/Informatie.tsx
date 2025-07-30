@@ -11,7 +11,8 @@ import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
 import Section7 from "./components/Section7";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
-import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
+// import Reviews from "../Home/components/Reviews";
 
 function InformatiePage() {
     return (
@@ -22,28 +23,30 @@ function InformatiePage() {
                 </Heading>
             </CommonHero>
 
-            <Stack px={[4, 10, 10, 28]}>
-                <Section1 />
-            </Stack>
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <Section1 />
+                </Stack>
+            </Container>
 
-            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-                <Section2 />
-            </Stack>
+            <Section2 />
 
-            <Stack my={20} px={[4, 10, 10, 28]}>
-                <Section3 />
-                <Section4 />
-                <Section5 />
-                <Section6 />
-            </Stack>
+            <Container>
+                <Stack my={20} px={[4, 10, 10, 28]}>
+                    <Section3 />
+                    <Section4 />
+                    <Section5 />
+                    <Section6 />
+                </Stack>
+            </Container>
 
-            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-                <Section7 />
-            </Stack>
+            <Section7 />
 
-            <Stack px={[4, 10, 10, 28]}>
-                <LessonPackage />
-            </Stack>
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <LessonPackage />
+                </Stack>
+            </Container>
 
             <CallBackReq />
             <Partners />

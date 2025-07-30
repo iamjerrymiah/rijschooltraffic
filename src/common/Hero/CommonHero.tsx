@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 
 import heroImg from "../../assets/img/overons_hero.jpeg";
+import { Container } from "../../styling/layout";
 
 export default function CommonHero({ children, Img }: any) {
   return (
@@ -12,7 +13,9 @@ export default function CommonHero({ children, Img }: any) {
       px={[4, 8, 8, 20]}
       py={{ base: 6, md: 12 }}
     >
+      <Container>
       {children}
+      </Container>
     </Box>
   );
 }

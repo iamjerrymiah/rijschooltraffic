@@ -22,6 +22,8 @@ import {
 import { useNavigate } from "react-router";
 import Map from "../common/Map/Map";
 
+import logo from '../assets/icon/logo.jpg'
+
 const Footer = () => {
     const navigate = useNavigate();
 
@@ -40,9 +42,15 @@ const Footer = () => {
                                 bg="white"
                                 p={2}
                                 borderRadius="md"
+                                cursor={'pointer'}
                                 onClick={() => navigate("/")}
                             >
-                                <Image src="/logo.jpg" alt="Logo" width="120" />
+                                <Image 
+                                    src={logo}
+                                    alt="Logo" 
+                                    width="120" 
+                                    objectFit={'contain'}
+                                />
                             </Box>
 
                             <VStack
@@ -135,7 +143,7 @@ const Footer = () => {
                             </Heading>
                             <VStack align="start" spacing={1} fontSize="sm">
                                 {[
-                                    ["Autorijles", `/autorijschool-apeldoorn`],
+                                    ["Autorijles", `/autorijschool-nijmengen`],
                                     // ["Motorrijles", `/motorrijles-apeldoorn`],
                                     // ["Theoriecursus", `/theoriecursus`],
                                     ["Spoedcursus", `/spoedcursus`],

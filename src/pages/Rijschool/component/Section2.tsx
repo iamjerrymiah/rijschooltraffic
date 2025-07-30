@@ -3,10 +3,12 @@ import Section from "../../../common/Section";
 import ContactBtns from "../../../common/Button/ContactBtns";
 
 import imagery from "../../../assets/img/rijschool_img2.webp";
+import { Container } from "../../../styling/layout";
 
 export default function Section2() {
   return (
-    <Box my={10}>
+    <Box bg='whitesmoke' py={10} px={[4,10,10,28]}>
+      <Container>
       <Section
         leftContent={
           <>
@@ -37,6 +39,7 @@ export default function Section2() {
           </Box>
         }
       />
+      </Container>
     </Box>
   );
 }

@@ -6,14 +6,14 @@ import {
     VStack,
 } from '@chakra-ui/react';
 import imagery from "../../../assets/img/eigen1.webp";
-import regionImg from "../../../assets/img/region_img.webp";
+// import regionImg from "../../../assets/img/region_img.webp";
 import informatie3 from "../../../assets/img/informatie3.webp";
-import region3Img from "../../../assets/img/region3_img.webp";
+// import region3Img from "../../../assets/img/region3_img.webp";
 import { useNavigate } from 'react-router';
 import { Container } from '../../../styling/layout';
 
 const courses = [
-    {title: 'Autorijles', image: imagery, link: `/autorijschool-apeldoorn`},
+    {title: 'Autorijles', image: imagery, link: `/autorijschool-nijmengen`},
     // {title: 'Motorrijles', image: regionImg, link: `/motorrijles-apeldoorn`},
     {title: 'Spoedcursus', image: informatie3, link: `/spoedcursus`},
     // {title: 'Theoriecursus', image: region3Img, link: `/theoriecursus`},

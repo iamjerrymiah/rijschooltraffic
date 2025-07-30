@@ -5,7 +5,8 @@ import CommonHero from "../../common/Hero/CommonHero";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import Section1 from "./components/Section1";
-import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
+// import Reviews from "../Home/components/Reviews";
 
 function EigenPage() {
     return (
@@ -16,11 +17,13 @@ function EigenPage() {
                 </Heading>
             </CommonHero>
 
-            <Stack px={[4, 10, 10, 28]}>
-                <Section1 />
-                <LessonPackage />
-            </Stack>
-
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <Section1 />
+                    <LessonPackage />
+                </Stack>
+            </Container>
+            
             <CallBackReq />
             <Partners />
             {/* <Reviews /> */}

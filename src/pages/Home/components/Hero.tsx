@@ -42,7 +42,7 @@ export default function Hero({ region }: any) {
                         <Heading size="2xl">
                             Rijschool{" "}
                             <Text as="span" color="#00AEEF">
-                                {region ? region : "Apeldoorn"}
+                                {region ? region : "Traffic"}
                             </Text>
                         </Heading>
 

@@ -5,7 +5,8 @@ import CommonHero from "../../common/Hero/CommonHero";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
-import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
+// import Reviews from "../Home/components/Reviews";
 
 function PraktijkexamenPage() {
     return (
@@ -16,13 +17,14 @@ function PraktijkexamenPage() {
                 </Heading>
             </CommonHero>
 
-            <Stack px={[4, 10, 10, 28]}>
-                <Section1 />
-            </Stack>
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <Section1 />
+                </Stack>
+            </Container>
 
-            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-                <Section2 />
-            </Stack>
+            <Section2 />
+
 
             <CallBackReq />
             <Partners />

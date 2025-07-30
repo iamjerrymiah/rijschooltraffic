@@ -80,7 +80,7 @@ export default function AutorijlesApeldoorn({ region }: any) {
                                 <Link
                                     color={"orange"}
                                     onClick={() =>
-                                        navigate(`/autorijschool-apeldoorn`)
+                                        navigate(`/autorijschool-nijmengen`)
                                     }
                                 >
                                     autorijschool in{" "}

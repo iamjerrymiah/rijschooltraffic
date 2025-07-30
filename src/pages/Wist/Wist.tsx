@@ -4,7 +4,8 @@ import Partners from "../Home/components/Partners";
 import CommonHero from "../../common/Hero/CommonHero";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
-import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
+// import Reviews from "../Home/components/Reviews";
 
 function WistPage() {
     return (
@@ -14,9 +15,13 @@ function WistPage() {
                     Wist jij dat …
                 </Heading>
             </CommonHero>
-            <Stack px={[4, 10, 10, 28]}>
-                <LessonPackage />
-            </Stack>
+
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <LessonPackage />
+                </Stack>
+            </Container>
+
             <CallBackReq />
             <Partners />
             {/* <Reviews /> */}

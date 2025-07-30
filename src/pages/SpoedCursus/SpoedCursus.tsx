@@ -7,7 +7,8 @@ import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
 import Section1 from "./components/Section1";
 import Section3 from "./components/Section3";
-import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
+// import Reviews from "../Home/components/Reviews";
 
 function SpoedcursusPage() {
     return (
@@ -17,6 +18,7 @@ function SpoedcursusPage() {
                     Spoedcursus
                 </Heading>
             </CommonHero>
+
             <Stack px={[4, 10, 10, 28]}>
                 <Section1 />
             </Stack>
@@ -25,9 +27,13 @@ function SpoedcursusPage() {
                 <Section3 />
             </Stack>
             <ReqTrialLesson />
-            <Stack px={[4, 10, 10, 28]}>
-                <LessonPackage />
-            </Stack>
+
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <LessonPackage />
+                </Stack>
+            </Container>
+
             <Partners />
             <CallBackReq />
             {/* <Reviews /> */}
