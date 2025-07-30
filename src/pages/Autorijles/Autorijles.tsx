@@ -8,39 +8,46 @@ import Section3 from "./components/Section3";
 import ReqTrialLesson from "../../common/ReqTrialLesson/ReqTrialLesson";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
 import CallBackReq from "../../common/CallBackReq/CallBackReq";
-import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
 
 function AutorijlesPage() {
     return (
         <Box w="100%">
             <CommonHero>
                 <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-                    Autorijschool Apeldoorn
+                    Autorijles Nijmengen
                 </Heading>
             </CommonHero>
+
             <Stack px={[4, 10, 10, 28]}>
                 <Section1 />
             </Stack>
             <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
                 <Section2 />
             </Stack>
+
             <Stack px={[4, 10, 10, 28]}>
                 <Section3 />
             </Stack>
+
             <ReqTrialLesson />
-            <Stack px={[4, 10, 10, 28]}>
-                <LessonPackage />
-            </Stack>
+
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <LessonPackage />
+                </Stack>
+            </Container>
+
             <CallBackReq />
             <Partners />
-            <Reviews />
+            {/* <Reviews /> */}
         </Box>
     );
 }
 
 export default function Autorijles() {
     return (
-        <PageMainContainer title="Autorijles" description="">
+        <PageMainContainer title="Autorijles Nijmengen" description="">
             <AutorijlesPage />
         </PageMainContainer>
     );

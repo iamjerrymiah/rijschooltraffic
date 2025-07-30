@@ -32,12 +32,12 @@ function MotorrijlesPage() {
             <Stack px={[4, 10, 10, 28]}>
                 <LessonPackage />
             </Stack>
-             <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
+            <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
                 <Section4 />
             </Stack>
             <CallBackReq />
             <Partners />
-            <Reviews />
+            {/* <Reviews /> */}
         </Box>
     );
 }

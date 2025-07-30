@@ -22,6 +22,8 @@ import {
 import { useNavigate } from "react-router";
 import Map from "../common/Map/Map";
 
+import logo from '../assets/icon/logo.jpg'
+
 const Footer = () => {
     const navigate = useNavigate();
 
@@ -40,9 +42,15 @@ const Footer = () => {
                                 bg="white"
                                 p={2}
                                 borderRadius="md"
+                                cursor={'pointer'}
                                 onClick={() => navigate("/")}
                             >
-                                <Image src="/logo.png" alt="Logo" width="120" />
+                                <Image 
+                                    src={logo}
+                                    alt="Logo" 
+                                    width="120" 
+                                    objectFit={'contain'}
+                                />
                             </Box>
 
                             <VStack
@@ -56,7 +64,7 @@ const Footer = () => {
                                             FaPhone as unknown as React.ElementType
                                         }
                                     />
-                                    <Text>085-0604110</Text>
+                                    <Text>+31685841714</Text>
                                 </HStack>
                                 <HStack>
                                     <Icon
@@ -64,7 +72,7 @@ const Footer = () => {
                                             FaEnvelope as unknown as React.ElementType
                                         }
                                     />
-                                    <Text>info@diepopleidingen.nl</Text>
+                                    <Text>traffic70@live.com</Text>
                                 </HStack>
                                 <HStack>
                                     <Icon
@@ -72,7 +80,7 @@ const Footer = () => {
                                             FaPhone as unknown as React.ElementType
                                         }
                                     />
-                                    <Text>085-0604110</Text>
+                                    <Text>+31685841714</Text>
                                 </HStack>
                                 <HStack>
                                     <Icon
@@ -80,7 +88,7 @@ const Footer = () => {
                                             FaMapMarkerAlt as unknown as React.ElementType
                                         }
                                     />
-                                    <Text>Sutton 11, 7327 AB Apeldoorn</Text>
+                                    <Text>Willemsweg 234, 6531DT Nijmengen</Text>
                                 </HStack>
                             </VStack>
 
@@ -115,7 +123,7 @@ const Footer = () => {
                                         "/veelgestelde-vragen"
                                     ],
                                     ["Reviews", "/reviews"],
-                                    ["Werken bij DIEP", "/werken-bij-diep"],
+                                    // ["Werken bij DIEP", "/werken-bij-diep"],
                                     ["Contact", "/contact"],
                                     ["Driving School", "/driving-school"]
                                 ].map((item: any, i) => (
@@ -135,11 +143,11 @@ const Footer = () => {
                             </Heading>
                             <VStack align="start" spacing={1} fontSize="sm">
                                 {[
-                                    ["Autorijles", `/autorijschool-apeldoorn`],
-                                    ["Motorrijles", `/motorrijles-apeldoorn`],
-                                    ["Theoriecursus", `/theoriecursus`],
+                                    ["Autorijles", `/autorijschool-nijmengen`],
+                                    // ["Motorrijles", `/motorrijles-apeldoorn`],
+                                    // ["Theoriecursus", `/theoriecursus`],
                                     ["Spoedcursus", `/spoedcursus`],
-                                    ["Opfriscursus", `/opfriscursus`]
+                                    // ["Opfriscursus", `/opfriscursus`]
                                 ].map((item, i) => (
                                     <Link
                                         key={i}
@@ -191,13 +199,13 @@ const Footer = () => {
                             </VStack>
                         </Box>
 
-                        <Box mt={4}>
+                        {/* <Box mt={4}>
                             <Heading size="sm" mb={2}>
                                 Onze regio’s
                             </Heading>
                             <VStack align="start" spacing={1} fontSize="sm">
                                 {[
-                                    ["Rijschool Apeldoorn", `/`],
+                                    ["Rijschool Traffic", `/`],
                                     [
                                         "Rijschool Beekbergen",
                                         `/rijschool-beekbergen`
@@ -218,7 +226,7 @@ const Footer = () => {
                                     </Link>
                                 ))}
                             </VStack>
-                        </Box>
+                        </Box> */}
                     </GridItem>
 
                     {/* Map + Openingstijden */}
@@ -233,8 +241,8 @@ const Footer = () => {
                                 ["Woensdag", "09:00–18:00"],
                                 ["Donderdag", "09:00–18:00"],
                                 ["Vrijdag", "09:00–18:00"],
-                                ["Zaterdag", "09:00–16:00"],
-                                ["Zondag", "Gesloten"]
+                                ["Zaterdag", "Gesloten/Proefles"],
+                                ["Zondag", "Gesloten/Proefles"]
                             ].map(([day, time], i) => (
                                 <HStack
                                     key={i}
@@ -266,7 +274,7 @@ const Footer = () => {
                     gap={4}
                 >
                     <Text fontSize={"sm"}>
-                        &copy; diepopleidingen.nl {new Date().getFullYear()}
+                        &copy; traffic70@live.com {new Date().getFullYear()}
                     </Text>
                     <Stack justify={"right"}>
                         <SimpleGrid

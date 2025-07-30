@@ -11,51 +11,54 @@ import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
 import Section7 from "./components/Section7";
 import LessonPackage from "../../common/LessonPackage/LessonPackage";
-import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
+// import Reviews from "../Home/components/Reviews";
 
 function InformatiePage() {
-  return (
-    <Box w="100%">
-      <CommonHero>
-        <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
-          Informatie voor ouders
-        </Heading>
-      </CommonHero>
+    return (
+        <Box w="100%">
+            <CommonHero>
+                <Heading fontSize="5xl" mt={6} fontWeight="bold" color="white">
+                    Informatie voor ouders
+                </Heading>
+            </CommonHero>
 
-      <Stack px={[4, 10, 10, 28]}>
-        <Section1 />
-      </Stack>
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <Section1 />
+                </Stack>
+            </Container>
 
-      <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-        <Section2 />
-      </Stack>
+            <Section2 />
 
-      <Stack my={20} px={[4, 10, 10, 28]}>
-        <Section3 />
-        <Section4 />
-        <Section5 />
-        <Section6 />
-      </Stack>
+            <Container>
+                <Stack my={20} px={[4, 10, 10, 28]}>
+                    <Section3 />
+                    <Section4 />
+                    <Section5 />
+                    <Section6 />
+                </Stack>
+            </Container>
 
-      <Stack backgroundColor="whitesmoke" px={[4, 10, 10, 28]}>
-        <Section7 />
-      </Stack>
+            <Section7 />
 
-      <Stack px={[4, 10, 10, 28]}>
-        <LessonPackage />
-      </Stack>
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <LessonPackage />
+                </Stack>
+            </Container>
 
-      <CallBackReq />
-      <Partners />
-      <Reviews />
-    </Box>
-  );
+            <CallBackReq />
+            <Partners />
+            {/* <Reviews /> */}
+        </Box>
+    );
 }
 
 export default function Informatie() {
-  return (
-    <PageMainContainer title="Informatie voor ouders" description="">
-      <InformatiePage />
-    </PageMainContainer>
-  );
+    return (
+        <PageMainContainer title="Informatie voor ouders" description="">
+            <InformatiePage />
+        </PageMainContainer>
+    );
 }

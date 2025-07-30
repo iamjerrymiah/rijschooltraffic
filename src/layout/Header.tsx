@@ -39,6 +39,8 @@ import { Container } from "../styling/layout";
 import ModalCenter from "../common/Modal/ModalCenter";
 import TrialForm from "../common/Form/TrialFrom";
 
+import logo from "../assets/icon/logo.jpg"
+
 export default function Header() {
     const navigate = useNavigate();
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -125,8 +127,9 @@ export default function Header() {
             asChildren: [
                 {
                     name: "Autorijles",
-                    onUse: () => navigate(`/autorijschool-apeldoorn`)
+                    onUse: () => navigate(`/autorijschool-nijmengen`)
                 },
+                { name: "Spoedcursus", onUse: () => navigate(`/spoedcursus`) },
                 // {
                 //     name: "Motorrijles",
                 //     onUse: () => navigate(`/motorrijles-apeldoorn`)
@@ -135,7 +138,6 @@ export default function Header() {
                 //     name: "Theoriecursus",
                 //     onUse: () => navigate(`/theoriecursus`)
                 // },
-                { name: "Spoedcursus", onUse: () => navigate(`/spoedcursus`) },
                 // { name: "Opfriscursus", onUse: () => navigate(`/opfriscursus`) }
             ]
         },
@@ -153,7 +155,6 @@ export default function Header() {
     ];
 
     return (
-        <Container>
             <Box
                 position="fixed"
                 top="0"
@@ -168,12 +169,21 @@ export default function Header() {
                     align="center"
                     px={4}
                     py={4}
-                    flexWrap="wrap"
+                    // flexWrap="wrap"
+                    gap={4}
                     bg="white"
                 >
                     {/* Logo and Features */}
-                    <Flex gap={4} flexWrap="wrap" align="center">
-                        <Image src="/logo.png" alt="Logo" h="40px" />
+                    <Flex gap={4} align="center">
+                        <Image 
+                            src={logo} 
+                            alt="Logo" 
+                            w={["80px"]} 
+                            h={["80px"]}
+                            cursor={'pointer'}
+                            objectFit={'contain'}
+                            onClick={()=> navigate('/')}
+                        />
 
                         <Hide below="md">
                             <VStack
@@ -223,7 +233,7 @@ export default function Header() {
                                 <Text>5/5 |</Text>
                                 {/* <Text color="blue.500" cursor="pointer">
                                     Bekijk alle reviews.
-                                </Text> */}
+                                </Text>  */}
                             </HStack>
                         </VStack>
                         <Button
@@ -246,6 +256,7 @@ export default function Header() {
 
                 {/* Navigation */}
                 <Box bg={ElementColor.primary} px={4}>
+                    <Container>
                     <Flex
                         h={12}
                         alignItems="center"
@@ -331,6 +342,7 @@ export default function Header() {
                             />
                         </Show>
                     </Flex>
+                    </Container>
                 </Box>
 
                 {/* Drawer Menu for Mobile */}
@@ -456,25 +468,26 @@ export default function Header() {
                         </DrawerBody>
                     </DrawerContent>
                 </Drawer>
+
+                <ModalCenter
+                    isOpen={isOpenModal}
+                    onClose={onCloseModal}
+                    body={
+                        <>
+                            <Center>
+                                <Heading fontSize="2xl" py={2}>
+                                    Vraag onze gratis proefles aan!
+                                </Heading>
+                            </Center>
+                            <Text align="center" pb={2} color="orange">
+                                Proefles is gratis i.c.m. een lespakket.
+                            </Text>
+                            <TrialForm />
+                        </>
+                    }
+                />
+
             </Box>
 
-            <ModalCenter
-                isOpen={isOpenModal}
-                onClose={onCloseModal}
-                body={
-                    <>
-                        <Center>
-                            <Heading fontSize="2xl" py={2}>
-                                Vraag onze gratis proefles aan!
-                            </Heading>
-                        </Center>
-                        <Text align="center" pb={2} color="orange">
-                            Proefles is gratis i.c.m. een lespakket.
-                        </Text>
-                        <TrialForm />
-                    </>
-                }
-            />
-        </Container>
     );
 }

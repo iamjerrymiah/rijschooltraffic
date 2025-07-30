@@ -18,10 +18,10 @@ const package1 = [
     {
         title: "Actiepakket",
         subtitle: "Alleen voor beginnende leerlingen",
-        price: "€450",
+        price: "€560",
         bg: "blue.600",
         features: [
-            "10 rijlessen (5x blokuur 100 min)",
+            "10 rijlessen (5x blokuur 120 min)",
             "€50,- pakket korting",
             "Direct beginnen",
             "Vanaf 16,5 jaar",
@@ -198,18 +198,18 @@ const package4 = [
         ],
         cta: "Direct aanmelden"
     },
-    {
-        title: "Opfriscursus",
-        subtitle: "Inkomen na lang geen auto te hebben gereden",
-        price: "€220",
-        bg: "orange.600",
-        features: [
-            "4 rijlessen van 60 min",
-            "Getrainde rijinstructeurs",
-            "Faalangst deskundige",
-        ],
-        cta: "Direct aanmelden"
-    },
+    // {
+    //     title: "Opfriscursus",
+    //     subtitle: "Inkomen na lang geen auto te hebben gereden",
+    //     price: "€220",
+    //     bg: "orange.600",
+    //     features: [
+    //         "4 rijlessen van 60 min",
+    //         "Getrainde rijinstructeurs",
+    //         "Faalangst deskundige",
+    //     ],
+    //     cta: "Direct aanmelden"
+    // },
     {
         title: "Spoedcursus",
         subtitle: "Binnen 10 dagen je rijbewijs op zak!",
@@ -258,7 +258,7 @@ export default function LessonPackage({ last }:any) {
 
             {last && 
                 <PackageListing
-                    columns={[1, 1, 1, 3]}
+                    columns={[1, 1, 1, 2]}
                     packages={package4}
                     heading="Onze cursussen op een rijtje"
                     // subHeading="Motorrijlessen voor een categorie A, A code 80, A2 rijbewijs."

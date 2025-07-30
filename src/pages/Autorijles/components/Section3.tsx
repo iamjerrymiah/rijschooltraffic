@@ -29,11 +29,12 @@ export default function Section3() {
                                 Heb je moeite met het besturen van een
                                 handgeschakeld lesauto of wil je door ande privé
                                 of medische redenen les volgen in automaat
-                                lesauto? Dat kan bij DIEP Opleidingen! Nadat je
-                                bent geslaagd voor je rijbewijs, krijg je een
-                                rijbewijs B met code 78. Je kunt hiermee enkel
-                                rijden in een automaat auto en mag je dus geen
-                                handgeschakeld auto mee besturen.
+                                lesauto? Dat kan bij RijSchool Traffic
+                                Opleidingen! Nadat je bent geslaagd voor je
+                                rijbewijs, krijg je een rijbewijs B met code 78.
+                                Je kunt hiermee enkel rijden in een automaat
+                                auto en mag je dus geen handgeschakeld auto mee
+                                besturen.
                             </Text>
 
                             <Text fontSize="14px" py={2}>
@@ -63,7 +64,7 @@ export default function Section3() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

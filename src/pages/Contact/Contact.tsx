@@ -4,7 +4,8 @@ import Partners from "../Home/components/Partners";
 import CommonHero from "../../common/Hero/CommonHero";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
-import Reviews from "../Home/components/Reviews";
+import { Container } from "../../styling/layout";
+// import Reviews from "../Home/components/Reviews";
 
 function ContactPage() {
     return (
@@ -14,11 +15,15 @@ function ContactPage() {
                     Contact
                 </Heading>
             </CommonHero>
-            <Stack px={[4, 10, 10, 28]}>
-                <Section1 />
-                <Section2 />
-            </Stack>
-            <Reviews />
+
+            <Container>
+                <Stack px={[4, 10, 10, 28]}>
+                    <Section1 />
+                    <Section2 />
+                </Stack>
+            </Container>
+
+            {/* <Reviews /> */}
             <Partners />
         </Box>
     );

@@ -12,16 +12,17 @@ export default function Section1() {
             <Box my={10}>
                 <Section
                     leftContent={
-                        <VStack align="start" >
+                        <VStack align="start">
                             <Heading size="xl">De theoriecursus</Heading>
 
                             <Text fontSize="14px" py={2}>
-                                Bij DIEP Opleidingen zorgen wij ervoor dat je
-                                binnen 1 dag 100% kan slagen voor je theorie
-                                examen. Er hoeft geen boek voor open geslagen te
-                                worden. Dus als je moeite hebt met leren of
-                                gewoon geen zin hebt om alle regels uit een boek
-                                te leren; dan is onze cursus iets voor jou!
+                                Bij RijSchool Traffic Opleidingen zorgen wij
+                                ervoor dat je binnen 1 dag 100% kan slagen voor
+                                je theorie examen. Er hoeft geen boek voor open
+                                geslagen te worden. Dus als je moeite hebt met
+                                leren of gewoon geen zin hebt om alle regels uit
+                                een boek te leren; dan is onze cursus iets voor
+                                jou!
                             </Text>
 
                             <Heading size="md">Hoge slagingskans</Heading>
@@ -72,7 +73,7 @@ export default function Section1() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

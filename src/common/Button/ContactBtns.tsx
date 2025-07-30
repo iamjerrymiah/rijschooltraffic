@@ -17,19 +17,22 @@ export default function ContactBtns({
     removeLeftBtn,
     removeRightBtn
 }: any) {
+
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     return (
         <Box display="flex" gap={4} mt={2}>
             {!removeLeftBtn && (
-                <Button
-                    fontSize={"12px"}
-                    fontWeight={400}
-                    leftIcon={leftIcon}
-                    colorScheme="blue"
-                >
-                    {leftText}
-                </Button>
+                <a href={`tel:${leftText}`}>
+                    <Button
+                        fontSize={"12px"}
+                        fontWeight={400}
+                        leftIcon={leftIcon}
+                        colorScheme="blue"
+                    >
+                        {leftText}
+                    </Button>
+                </a>
             )}
             {!removeRightBtn && (
                 <Button

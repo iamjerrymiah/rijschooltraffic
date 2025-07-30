@@ -26,7 +26,7 @@ function OpfriscursusPage() {
             </Stack>
             <Partners />
             <CallBackReq />
-            <Reviews />
+            {/* <Reviews /> */}
         </Box>
     );
 }

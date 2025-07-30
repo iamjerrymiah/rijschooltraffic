@@ -45,10 +45,12 @@ export default function Section1() {
 
                             <Box width="100%" shadow="xl" p={5} rounded="xl">
                                 <Text fontSize="14px" py={2}>
-                                    4 Opfrislessen ------------------------------------ €180
+                                    4 Opfrislessen
+                                    ------------------------------------ €180
                                 </Text>
                                 <Text fontSize="14px" py={2}>
-                                    8 Opfrislessen ------------------------------------ €360
+                                    8 Opfrislessen
+                                    ------------------------------------ €360
                                 </Text>
                             </Box>
 
@@ -60,7 +62,7 @@ export default function Section1() {
                                         }
                                     />
                                 }
-                                leftText="085 060 41 10"
+                                leftText="+31685841714"
                                 rightText="Gratis proefles aanvragen"
                             />
                         </VStack>

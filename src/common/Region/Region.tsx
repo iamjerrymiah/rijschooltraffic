@@ -13,7 +13,7 @@ import MotorrijschoolApeldoorn from "../../pages/Home/components/MotorrijschoolA
 import OpfriscursusApeldoorn from "../../pages/Home/components/OpfriscursusApeldoorn";
 import TheoriecursusApeldoorn from "../../pages/Home/components/TheoriecursusApeldoorn";
 import Partners from "../../pages/Home/components/Partners";
-import Reviews from "../../pages/Home/components/Reviews";
+// import Reviews from "../../pages/Home/components/Reviews";
 import LessonPackage from "../LessonPackage/LessonPackage";
 
 export default function Region({ region }: any) {
@@ -40,7 +40,7 @@ export default function Region({ region }: any) {
                     <TheoriecursusApeldoorn region={region} />
                 </Stack>
                 <Partners />
-                <Reviews />
+                {/* <Reviews /> */}
                 <Stack px={[4, 10, 10, 28]}>
                     <LessonPackage />
                 </Stack>
