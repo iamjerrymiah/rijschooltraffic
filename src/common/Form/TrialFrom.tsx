@@ -32,66 +32,45 @@ export default function TrialForm() {
 
     const handleSubmit = () => {
         setLoading(true);
-        toast({
-            title: "Message sent.",
-            description: "We've received your message.",
-            status: "success",
-            duration: 5000,
-            isClosable: true
-        });
 
-        setFormData({
-            name: "",
-            email: "",
-            education: "",
-            dob: "",
-            resident: "",
-            postCode: "",
-            address: "",
-            phoneNumber: "",
-            foundUs: "",
-            optMessage: ""
-        });
-        setLoading(false);
-
-        // emailjs
-        //     .send(
-        //         "service_9klix1s",
-        //         "template_1nvmhs8",
-        //         formData,
-        //         "S8wo1JWN9ShL2755z"
-        //     )
-        //     .then(() => {
-        //         toast({
-        //             title: "Message sent.",
-        //             description: "We've received your message.",
-        //             status: "success",
-        //             duration: 5000,
-        //             isClosable: true
-        //         });
-        //         setFormData({
-        //             name: "",
-        //             email: "",
-        //             education: "",
-        //             dob: "",
-        //             resident: "",
-        //             postCode: "",
-        //             address: "",
-        //             phoneNumber: "",
-        //             foundUs: "",
-        //             optMessage: ""
-        //         });
-        //         setLoading(false);
-        //     })
-        //     .catch(e => {
-        //         toast({
-        //             title: "Error",
-        //             description: "Failed to send message.",
-        //             status: "error",
-        //             duration: 5000,
-        //             isClosable: true
-        //         });
-        //     });
+        emailjs
+            .send(
+                "",
+                "template_vvc0wek",
+                formData,
+                "GAM0HXSusDBk261SD"
+            )
+            .then(() => {
+                toast({
+                    title: "Message sent.",
+                    description: "We've received your message.",
+                    status: "success",
+                    duration: 5000,
+                    isClosable: true
+                });
+                setFormData({
+                    name: "",
+                    email: "",
+                    education: "",
+                    dob: "",
+                    resident: "",
+                    postCode: "",
+                    address: "",
+                    phoneNumber: "",
+                    foundUs: "",
+                    optMessage: ""
+                });
+                setLoading(false);
+            })
+            .catch(e => {
+                toast({
+                    title: "Error",
+                    description: "Failed to send message.",
+                    status: "error",
+                    duration: 5000,
+                    isClosable: true
+                });
+            });
     };
 
     return (
@@ -114,7 +93,7 @@ export default function TrialForm() {
                     {[
                         "Autorijles",
                         // "Motorrijles",
-                        "Spoedcursus",
+                        "Spoedcursus"
                         // "Theoriecursus",
                         // "Opfriscursus"
                     ].map((status: any, i) => (
