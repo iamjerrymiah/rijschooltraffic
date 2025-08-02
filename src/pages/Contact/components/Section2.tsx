@@ -25,61 +25,44 @@ export default function Section2() {
         message: ""
     });
 
-    console.log(loading);
-
     const handleChange = (e: any) =>
         setFormData({ ...formData, [e.target.name]: e.target.value });
 
     const handleSubmit = () => {
         setLoading(true);
-        toast({
-            title: "Message sent.",
-            description: "We've received your message.",
-            status: "success",
-            duration: 5000,
-            isClosable: true
-        });
 
-        setFormData({
-            name: "",
-            email: "",
-            phoneNumber: "",
-            message: ""
-        });
-        setLoading(false);
-
-        // emailjs
-        //     .send(
-        //         "service_9klix1s",
-        //         "template_xop0tf5",
-        //         formData,
-        //         "S8wo1JWN9ShL2755z"
-        //     )
-        //     .then(() => {
-        //         toast({
-        //             title: "Message sent.",
-        //             description: "We've received your message.",
-        //             status: "success",
-        //             duration: 5000,
-        //             isClosable: true
-        //         });
-        //         setFormData({
-        //             name: "",
-        //             email: "",
-        //             phoneNumber: "",
-        //             message: ""
-        //         });
-        //         setLoading(false);
-        //     })
-        //     .catch(e => {
-        //         toast({
-        //             title: "Error",
-        //             description: "Failed to send message.",
-        //             status: "error",
-        //             duration: 5000,
-        //             isClosable: true
-        //         });
-        //     });
+        emailjs
+            .send(
+                "",
+                "template_jmyogsc",
+                formData,
+                "GAM0HXSusDBk261SD"
+            )
+            .then(() => {
+                toast({
+                    title: "Message sent.",
+                    description: "We've received your message.",
+                    status: "success",
+                    duration: 5000,
+                    isClosable: true
+                });
+                setFormData({
+                    name: "",
+                    email: "",
+                    phoneNumber: "",
+                    message: ""
+                });
+                setLoading(false);
+            })
+            .catch(e => {
+                toast({
+                    title: "Error",
+                    description: "Failed to send message.",
+                    status: "error",
+                    duration: 5000,
+                    isClosable: true
+                });
+            });
     };
 
     return (
